@@ -1,47 +1,46 @@
 ---
 sidebar_position: 1
 ---
+# Installation
 
-# Tutorial Intro
+![image](https://github.com/abes-esr/movies-docker/assets/43854599/461fa996-48f4-4669-92bb-c9678d26e2dc)
 
-Let's discover **Docusaurus in less than 5 minutes**.
+Le [dépôt GitHub](https://github.com/abes-esr/movies-docker) contient la configuration docker 🐳 pour déployer l'application movies en local sur le poste d'un développeur, ou bien sur les serveurs de test et prod. 
 
-## Getting Started
+## Prérequis
 
-Get started by **creating a new site**.
+Disposer de :
+- ``🐳 docker``
+- ``🐳 docker-compose``
 
-Or **try Docusaurus immediately** with **[docusaurus.new](https://docusaurus.new)**.
+## Installation
 
-### What you'll need
-
-- [Node.js](https://nodejs.org/en/download/) version 16.14 or above:
-  - When installing Node.js, you are recommended to check all checkboxes related to dependencies.
-
-## Generate a new site
-
-Generate a new Docusaurus site using the **classic template**.
-
-The classic template will automatically be added to your project after you run the command:
-
+Déployer la configuration docker dans un répertoire :
 ```bash
-npm init docusaurus@latest my-website classic
+# adaptez /opt/pod/ avec l'emplacement où vous souhaitez déployer l'application
+cd /opt/pod/
+git clone https://github.com/abes-esr/movies-docker.git
 ```
 
-You can type this command into Command Prompt, Powershell, Terminal, or any other integrated terminal of your code editor.
-
-The command also installs all necessary dependencies you need to run Docusaurus.
-
-## Start your site
-
-Run the development server:
-
+Configurer l'application depuis l'exemple du [fichier ``.env-dist``](./.env-dist) (ce fichier contient la liste des variables) :
 ```bash
-cd my-website
-npm run start
+cd /opt/pod/movies-docker/
+cp .env-dist .env
+# personnaliser alors le contenu du .env : indiquer les mots de passe et : le prefix de l'url (MOVIES_WIKIBASE_SCHEME), l'url publique (MOVIES_WIKIBASE_URL_PUBLIQUE), et le port du reverse proxy (MOVIES_RP_PORT).
 ```
 
-The `cd` command changes the directory you're working with. In order to work with your newly created Docusaurus site, you'll need to navigate the terminal there.
+**Note : les mots de passe ne sont pas présent dans le fichier au moment de la copie. Vous devez aller les renseigner manuellement en éditant le fichier dans la console avec nano par exemple**
 
-The `npm run start` command builds your website locally and serves it through a development server, ready for you to view at http://localhost:3000/.
+Avant de démarrer l'application, assurez-vous que le fichier wikibase/LocalSettings.php ait les bonnes permissions. 
+Pour ce faire, exécutez la commande suivante : 
+```bash
+cd /opt/pod/movies-docker/
+chmod 644 wikibase/LocalSettings.php
+```
 
-Open `docs/intro.md` (this page) and edit some lines: the site **reloads automatically** and displays your changes.
+Démarrer l'application :
+```bash
+cd /opt/pod/movies-docker/
+docker-compose up -d
+```
+

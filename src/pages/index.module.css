@@ -8,6 +8,7 @@
   text-align: center;
   position: relative;
   overflow: hidden;
+  height: 50rem;
 }
 
 @media screen and (max-width: 996px) {
@@ -16,8 +17,13 @@
   }
 }
 
-.buttons {
+.installButton {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 50px 0px 0px 0;
+}
+
+.marginBottom {
+  margin: 0px 0px 50px 0;
 }
