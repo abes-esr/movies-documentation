@@ -22,7 +22,7 @@ cd /opt/pod/
 git clone https://github.com/abes-esr/movies-docker.git
 ```
 
-Configurer l'application depuis l'exemple du [fichier ``.env-dist``](./.env-dist) (ce fichier contient la liste des variables) :
+Configurer l'application depuis l'exemple du fichier [``.env-dist``](https://github.com/abes-esr/movies-docker/blob/develop/.env-dist) (ce fichier contient la liste des variables) :
 ```bash
 cd /opt/pod/movies-docker/
 cp .env-dist .env
