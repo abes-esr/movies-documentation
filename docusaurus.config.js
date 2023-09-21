@@ -6,17 +6,17 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'Documentation movies-docker',
-  tagline: "Movies-docker est un outil en charge de constituer une base de connaissance historique et centralisée sur les établissements de l'ESR et leurs activités en lien avec le doctorat et la documentation électronique. Cet outil est destiné à un usage interne de l'Abes.",
+  title: 'Documentation Movies',
+  tagline: "Modélisation de la vie des établissements de l\'ESR",
   favicon: 'img/favicon.ico',
 
-  // Set the production url of your site here
-  url: 'https://movies-docker.abes.com',
+  // Set the production url of the site here
+  url: 'https://movies-test.abes.fr',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
   // Even if you don't use internalization, you can use this field to set useful
@@ -27,19 +27,27 @@ const config = {
     locales: ['fr'],
   },
 
+  markdown: {
+    mermaid: true,
+  },
+
+  themes: ['@docusaurus/theme-mermaid'],
+
   presets: [
     [
       'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
+      /** @type {import('@docusaurus/preset-classic').Options} **/
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-
+          routeBasePath: '/',
           // "Edit this page" link.
           // The final URL is computed by editUrl + relativeDocPath
+          // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/abes-esr/movies-documentation/tree/develop/',
         },
+        blog: false,
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
         },
@@ -50,21 +58,20 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'Movies-Docker',
+        title: '',
         logo: {
           alt: 'Logo Movies',
-          src: 'img/movies-logo.png',
+          src: 'img/logo.svg',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Documentation',
+            label: 'Modélisation',
           },
+          {to: '/tags', label: 'Accès thématiques', position: 'left'},
           {
             href: 'https://github.com/abes-esr/movies-docker',
             label: 'GitHub du projet',
@@ -73,14 +80,14 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
+        style: 'light',
         links: [
           {
-            title: 'Docs',
+            title: 'Documentation',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Modélisation',
+                to: '/docs',
               },
             ],
           },
@@ -102,14 +109,9 @@ const config = {
         L'Abes, une agence du Ministère de l'Enseignement supérieur et de la Recherche.`,
       },
       prism: {
+        additionalLanguages: ['turtle', 'sparql'],
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
-      },
-      // Mode Sombre par défaut
-      colorMode: {
-        defaultMode: 'dark',
-        disableSwitch: false,
-        respectPrefersColorScheme: false,
       },
     }),
 };
