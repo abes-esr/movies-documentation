@@ -24,7 +24,7 @@ Preuve
 
 | **Propriétés**                                    | ***Domain*** | ***Range***                                    | Cardinalité |
 | ------------------------------------------------- | ------------ | ---------------------------------------------- | ----------- |
-| [preuve](/movies-doc/Ontologie/Propriétés/preuve) |              | [Preuve](/movies-doc/Ontologie/Classes/Preuve) | F/R         |
+| [preuve](/Ontologie/Propriétés/preuve) |              | [Preuve](/Ontologie/Classes/Preuve) | F/R         |
 
 ## Exemple
 
