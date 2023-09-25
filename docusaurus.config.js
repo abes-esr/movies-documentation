@@ -14,7 +14,7 @@ const config = {
   url: 'https://movies-test.abes.fr',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/doc/',
 
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
