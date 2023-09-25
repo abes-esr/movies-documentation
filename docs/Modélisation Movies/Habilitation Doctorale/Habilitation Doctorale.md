@@ -25,7 +25,7 @@ graph LR
 
 | **Propriétés**                                                                      | ***Domain***                                              | ***Range***                                                | **Qualificatifs**                                                                                                                                                                                          |
 | ----------------------------------------------------------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [habilitation doctorale](/movies-doc/Ontologie/Propriétés/habilitation%20doctorale) | [Organisation](/movies-doc/Ontologie/Classe/Organisation) | [Habilitation](/movies-doc/Ontologie/Classes/Habilitation) | [`début`](/movies-doc/Ontologie/Propriétés/début), [`fin`](/movies-doc/Ontologie/Propriétés/fin), [`preuve`](/movies-doc/Ontologie/Propriétés/preuve), [`source`](/movies-doc/Ontologie/Propriétés/source) |
+| [habilitation doctorale](/Ontologie/Propriétés/habilitation%20doctorale) | [Organisation](/Ontologie/Classe/Organisation) | [Habilitation](/Ontologie/Classes/Habilitation) | [`début`](/Ontologie/Propriétés/début), [`fin`](/Ontologie/Propriétés/fin), [`preuve`](/Ontologie/Propriétés/preuve), [`source`](/Ontologie/Propriétés/source) |
 
 ## Exemple : L'habilitation doctorale de Paris-Saclay (COMUE)
 

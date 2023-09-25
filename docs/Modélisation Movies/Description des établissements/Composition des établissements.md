@@ -40,9 +40,9 @@ Les propriétés suivantes peuvent être utilisées pour rendre compte de la com
 
 | Propriétés                                                          | *Domain*                                                   | *Range*                                                    | **Cardinalité** | **Qualificatifs**                                                                                                                                                                                          |
 | ------------------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------------------------------------- | --------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| [est membre de](/movies-doc/Ontologie/Propriétés/est%20membre%20de) | [Organisation](/movies-doc/Ontologie/Classes/Organisation) | [Organisation](/movies-doc/Ontologie/Classes/Organisation) | F/R             | [`début`](/movies-doc/Ontologie/Propriétés/début), [`fin`](/movies-doc/Ontologie/Propriétés/fin), [`preuve`](/movies-doc/Ontologie/Propriétés/preuve), [`source`](/movies-doc/Ontologie/Propriétés/source) |
+| [est membre de](/Ontologie/Propriétés/est%20membre%20de) | [Organisation](/Ontologie/Classes/Organisation) | [Organisation](/Ontologie/Classes/Organisation) | F/R             | [`début`](/Ontologie/Propriétés/début), [`fin`](/Ontologie/Propriétés/fin), [`preuve`](/Ontologie/Propriétés/preuve), [`source`](/Ontologie/Propriétés/source) |
 
-Chacune des propriétés listées ci-dessus peut être bornée dans le temps avec les propriétés [`début`](/movies-doc/Ontologie/Propriétés/début) et [`fin`](/movies-doc/Ontologie/Propriétés/fin). Chacune des assertions peut être complétée par une preuve et une source.
+Chacune des propriétés listées ci-dessus peut être bornée dans le temps avec les propriétés [`début`](/Ontologie/Propriétés/début) et [`fin`](/Ontologie/Propriétés/fin). Chacune des assertions peut être complétée par une preuve et une source.
 
 ## Exemple : Les membres de l'EPE Paris-Saclay
 
