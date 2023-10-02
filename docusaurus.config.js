@@ -33,6 +33,21 @@ const config = {
 
   themes: ['@docusaurus/theme-mermaid'],
 
+  plugins: [
+    [
+      // Local Search plugin
+      require.resolve("@cmfcmf/docusaurus-search-local"),
+      {
+        // Options here
+          // language of your documentation, see next section
+          language: "fr",
+
+          // whether to index blog pages
+          indexBlog: false,
+      },
+    ],
+  ],
+
   presets: [
     [
       'classic',
