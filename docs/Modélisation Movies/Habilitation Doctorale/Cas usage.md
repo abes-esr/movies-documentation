@@ -1,6 +1,7 @@
 ---
 tags:
   - cas d'usage
+  - sparql
 ---
 
 # Cas d'usage
