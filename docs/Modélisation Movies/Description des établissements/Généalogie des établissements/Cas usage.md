@@ -1,3 +1,8 @@
+---
+tags:
+  - cas d'usage
+---
+
 # Cas d'usage
 
 ## Établir la généalogie de l'Université Paris-Saclay (COMUE)
