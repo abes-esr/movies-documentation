@@ -1,3 +1,8 @@
+---
+tags:
+  - cas d'usage
+---
+
 # Cas d'usage
 
 ## Faire une synthèse des contrats de documentation électronique
