@@ -1,3 +1,8 @@
+---
+tags:
+  - cas d'usage
+---
+
 # Cas d'usage
 
 ## Liste des établissements membres du réseau thèse
