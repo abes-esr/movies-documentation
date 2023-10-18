@@ -1,10 +1,11 @@
 ---
+description: ""
 tags:
   - cas d'usage
   - sparql
 ---
 
-# Cas d'usage
+# Cas d'usage relatifs aux contrats de documentation électronique
 
 ## Faire une synthèse des contrats de documentation électronique
 
