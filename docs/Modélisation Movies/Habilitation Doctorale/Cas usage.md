@@ -1,11 +1,11 @@
 ---
-description: "Liste des établissements membres du réseau thèse\nLister les habilitations doctorales\nLister les habilitations doctorales en cours\nFiliations des environnements thèses de l'Université Paris-Saclay (COMUE)\nAssistance déportée : retrouver les établissements à contacter pour les thèses de la COMUE USPC"
+description: ""
 tags:
   - cas d'usage
   - sparql
 ---
 
-# Cas d'usage
+# Cas d'usage relatifs à l'habilitation doctorale
 
 ## Liste des établissements membres du réseau thèse
 
