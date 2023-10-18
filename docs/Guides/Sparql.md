@@ -1,5 +1,5 @@
 ---
-title: Liste des requêtes Sparql
+title: "Liste des requêtes Sparql"
 ---
 
 import SparqlEtab from '/app/docs/Modélisation Movies/Description des établissements/Généalogie des établissements/Cas usage.md' 
