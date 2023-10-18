@@ -59,7 +59,7 @@ graph LR
     </Statement>
 </Claim>
 
-<Claim emphase="true" property="a pour a pour successeur">
+<Claim emphase="true" property="a pour successeur">
     <Statement value="Université Paris-Saclay (EPE)">
         <Qualifier property="preuve">Arrêté du XXX</Qualifier>
         <References>
