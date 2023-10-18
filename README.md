@@ -6,3 +6,4 @@ Une version test est accessible sur le site web https://movies-test.abes.fr/doc
 
 Le site est déployé à l'aide de la configuration suivante :  
 https://github.com/abes-esr/projet2024-docker
+ 
