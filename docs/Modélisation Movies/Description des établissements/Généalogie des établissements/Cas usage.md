@@ -1,10 +1,11 @@
 ---
+description: ""
 tags:
   - cas d'usage
   - sparql
 ---
 
-# Cas d'usage
+# Cas d'usage relatifs à la généalogie des établissements
 
 ## Établir la généalogie de l'Université Paris-Saclay (COMUE)
 
