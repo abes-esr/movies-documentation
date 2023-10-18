@@ -29,7 +29,7 @@ La réconciliation peut être réalisée sur une ou plusieurs colonnes d'un proj
 
 :::caution
 
-Il est nécessaire de disposer des droits en écriture sur Movies pour exproter des données depuis OpenRefine. Il n'est pas possible d'utiliser ces identifiants Windows pour s'authentifier à Movies, un compte bot est prévu à cet effet.
+Il est nécessaire de disposer des droits en écriture sur Movies pour exproter des données depuis OpenRefine. Il n'est pas possible d'utiliser ses identifiants Windows pour s'authentifier à Movies, un compte bot est prévu à cet effet.
 
 :::
 
