@@ -1,4 +1,4 @@
-## Réconciliation
+## Réconcilier et exporter des données dans Wikibase
 
 ### Principes généraux
 
