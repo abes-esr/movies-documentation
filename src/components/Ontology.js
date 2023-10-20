@@ -24,9 +24,9 @@ const LinkClassOrProperty = (context, value) => {
 
   if (linking_contexts.includes(context) && allowed_prefix.includes(GetPrefix(value))) {
     if (IsCapitalized(value)) {
-      return <a href={"/Ontologie/Classes/" + value}>{value}</a>
+      return <a href={"/doc/Ontologie/Classes/" + value + "/"}>{value}</a>
     } else {
-      return <a href={"/Ontologie/Propriétés/" + value}>{value}</a>
+      return <a href={"/doc/Ontologie/Propriétés/" + value + "/"}>{value}</a>
     }
   } else {
     return value
