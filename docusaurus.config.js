@@ -55,7 +55,7 @@ const config = {
       ({
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          routeBasePath: '/',
+          routeBasePath: '/doc/',
           // "Edit this page" link.
           // The final URL is computed by editUrl + relativeDocPath
           // Remove this to remove the "edit this page" links.
