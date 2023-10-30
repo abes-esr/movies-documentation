@@ -11,11 +11,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of the site here
-  url: 'https://movies-test.abes.fr',
+  url: 'https://movies.abes.fr',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/doc/',
-  trailingSlash: true,
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
