@@ -49,6 +49,8 @@ Une fois les candidats identifiés trois options sont possibles :
 
 Il est possible d'utiliser les facettes à gauche de l'écran pour filtrer les candidats par score d'alignement.
 
+![image](https://github.com/abes-esr/movies-documentation/assets/60341438/502d67b2-5c24-4f0e-8f2d-e22751e93ca3)
+
 :::info
 
 Les actions "Apparier le candidat" et "créer un nouvel élément" entité peuvent être réaliser pour l'ensemble des cellules d'une colonne. Depuis l'entête d'une colonne ⓵ `Réconcilier` ⓶ -> `Actions` ⓷ :
@@ -59,12 +61,41 @@ Les actions "Apparier le candidat" et "créer un nouvel élément" entité peuve
 
 ### Saisir le schéma de données
 
+#### L'interface
+
+La saisie du schéma de données permet de :
+
+* Créer une entité
+* Ajouter des déclarations (propriétés et références) à une entité
+* Ajouter des termes (labels des descriptions) à une entité
+
+Les valeurs déclarations et des termes peuvent être saisies manuellement ou correspondre à la valeur d'une cellule.
+
+![image](https://github.com/abes-esr/movies-documentation/assets/60341438/5df3e6dc-77bc-4dc1-9f34-f9724d9e152a)
+
+L'interface de saisie des données se divise en trois parties :
+
+* La section de gestion des schéma (OpenRefine permet de créer de sauvgarder et charger des schémas)
+* La section de gestion des colonnes (les colonnes soulignées en verts correspondent aux colonnes alignées). Les colonnes peuvent être glissées dans la section de création d'entité.
+* La section de création d'entité.
+
+#### Créer une entité
+
+
+
+#### Identifier les erreurs
+
+#### Prévisualiser les modifications
+
 ### Importer des données
 
+Une fois les données alignées et le schéma créé il est possible d'exporter les données vers Wikibase.
 
 :::caution
 
 Il est nécessaire de disposer des droits en écriture sur Movies pour exproter des données depuis OpenRefine. Il n'est pas possible d'utiliser ses identifiants Windows pour s'authentifier à Movies, un compte bot est prévu à cet effet.
+
+Le compte Bot dispose de quotas d'écriture plus élevé qu'un utilisateur lambda
 
 :::
 
