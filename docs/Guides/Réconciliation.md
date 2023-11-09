@@ -75,12 +75,21 @@ Les valeurs déclarations et des termes peuvent être saisies manuellement ou co
 
 L'interface de saisie des données se divise en trois parties :
 
-* La section de gestion des schéma (OpenRefine permet de créer de sauvgarder et charger des schémas)
-* La section de gestion des colonnes (les colonnes soulignées en verts correspondent aux colonnes alignées). Les colonnes peuvent être glissées dans la section de création d'entité.
-* La section de création d'entité.
+* La section de gestion des schéma (OpenRefine permet de créer de sauvgarder et charger des schémas) ⓵
+* La section de gestion des colonnes (les colonnes soulignées en verts correspondent aux colonnes alignées). Les colonnes peuvent être glissées dans la section de création d'entité. ⓶
+* La section de création d'entité ⓷
 
 #### Créer une entité
 
+![image](https://github.com/abes-esr/movies-documentation/assets/60341438/c4c517d9-282d-4501-87bb-8f1adeef1070)
+
+La section de création d'entité permet de réaliser les actions suivantes
+
+* Ajouter un terme ⓵
+* Ajouter une déclaration ⓶
+* Créer une nouvelle entité ⓷
+
+![image](https://github.com/abes-esr/movies-documentation/assets/60341438/8cfb3192-686f-4fa9-80c6-cd54603e861c)
 
 
 #### Identifier les erreurs
