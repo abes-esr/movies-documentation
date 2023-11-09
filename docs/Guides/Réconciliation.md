@@ -2,7 +2,7 @@
 
 ### Principes généraux
 
-La réconciliation est le processus qui permet d'aligner des entités et des propriétés d'un projet OpenRefine avec une source de données externe. Ce processus est l'étape préalable à toute opération d'export de données dans une instace Wikibase.
+La réconciliation est le processus qui permet d'aligner des entités et des propriétés d'un projet OpenRefine avec une source de données externe. Ce processus est l'étape préalable à toute opération d'export de données dans une instace Wikibase depuis OpenRefine.
 
 ### Configurer le réconciliateur
 
@@ -16,7 +16,7 @@ Lorsqu'un réconciliateur est configuré il devient utilisable dans l'ensemble d
 
 ### Réconcilier les données
 
-Dans un projet OpenRefine la réconciliation des données est réalisée colonne par colonne.
+Dans un projet OpenRefine la réconciliation des données est réalisée colonne par colonne. La réconciliation peut s'appliquer à une entité ou une propriété.
 
 ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/dd9181be-a458-406d-b751-2e3e220bf8e3)
 
@@ -39,7 +39,23 @@ Cliquer sur `Démarer la réconciliation` permet de lancer le processus de réco
 
 #### Evaluation des candidats
 
+Une fois les candidats identifiés trois options sont possibles :
 
+![image](https://github.com/abes-esr/movies-documentation/assets/60341438/333040fc-4a48-4955-9c0c-1c84e5fe074f)
+
+* Apparier le candidat ⓵
+* Créer un nouvel élément (créer une nouvelle entité dans Wikibase) ⓶
+* Aligner manuellement la cellule en recherchant une entité dans Wikibase ⓷
+
+Il est possible d'utiliser les facettes à gauche de l'écran pour filtrer les candidats par score d'alignement.
+
+:::info
+
+Les actions "Apparier le candidat" et "créer un nouvel élément" entité peuvent être réaliser pour l'ensemble des cellules d'une colonne. Depuis l'entête d'une colonne ⓵ `Réconcilier` ⓶ -> `Actions` ⓷ :
+
+![image](https://github.com/abes-esr/movies-documentation/assets/60341438/f84540b4-fd34-48b9-829c-852dfaa3a68f)
+
+:::
 
 ### Saisir le schéma de données
 
