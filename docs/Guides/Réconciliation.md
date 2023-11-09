@@ -69,7 +69,7 @@ La saisie du schéma de données permet de :
 * Ajouter des déclarations (propriétés et références) à une entité
 * Ajouter des termes (labels des descriptions) à une entité
 
-Les valeurs déclarations et des termes peuvent être saisies manuellement ou correspondre à la valeur d'une cellule.
+Les valeurs des déclarations et des termes peuvent être saisies manuellement ou correspondre à la valeur d'une cellule.
 
 ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/5df3e6dc-77bc-4dc1-9f34-f9724d9e152a)
 
