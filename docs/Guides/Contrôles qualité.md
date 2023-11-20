@@ -68,14 +68,14 @@ https://movies.abes.fr/api/CQ_unicite_dates_creation_suppresion.csv
 
 :::
 
-### Cohérence des dates d'existence et des date de contrat
+### Cohérence des dates d'existence et des dates de contrat
 
 
 :::note
 
 :::
 
-### Cohérence des dates d'existence et des date d'habilitation
+### Cohérence des dates d'existence et des dates d'habilitation
 
 ```sparql
 PREFIX wdt: <https://movies.abes.fr/prop/direct/>
@@ -164,7 +164,7 @@ HAVING (?count > 1)
 ```
 :::note
 
-Un identifiant unique ne peut être attribué qu'une seule fois au sein d'une entité.
+Un identifiant unique ne peut être attribué qu'une seule fois par entité.
 
 https://movies.abes.fr/api/CQ_uncite_identifiants_par_entite.csv
 
