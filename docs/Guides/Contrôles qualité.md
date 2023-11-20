@@ -51,6 +51,47 @@ https://movies.abes.fr/api/CQ_inversion_debut_fin.csv
 
 ### Unicité des identifiants
 
+```sparql
+PREFIX wdt: <https://movies.abes.fr/prop/direct/>
+PREFIX wd: <https://movies.abes.fr/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <https://movies.abes.fr/prop/>
+PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
+
+SELECT ?statement ?problem (count(?identifiant) as ?count) WHERE {
+  {
+    ?statement wdt:P36 ?identifiant.
+    BIND("Indentifiant Paysage non unique" AS ?problem) 
+  } UNION {
+    ?statement wdt:P35 ?identifiant.
+    BIND("Indentifiant Idref non unique" AS ?problem)
+  } UNION {
+    ?statement wdt:P64 ?identifiant.
+    BIND("Indentifiant CNRS non unique" AS ?problem)
+  } UNION {
+    ?statement wdt:P70 ?identifiant.
+    BIND("Indentifiant ISNI non unique" AS ?problem)
+  } UNION {
+    ?statement wdt:P33 ?identifiant.
+    BIND("Indentifiant RNSR non unique" AS ?problem)
+  } UNION {
+    ?statement wdt:P3 ?identifiant.
+    BIND("Indentifiant code établissement non unique" AS ?problem)
+  }
+} GROUP BY ?statement ?problem
+HAVING (?count > 1)
+```
+:::note
+
+Une entité ne peut avoir qu'un seul identifiant par famille d'identifiant (RNSR, Paysage, code etab)
+
+https://movies.abes.fr/api/CQ_uncite_identifiants_par_entite.csv
+
+:::
+
+#### Unicité d'un identifiant
+
 ## Contrôle des liens
 
 
