@@ -39,7 +39,7 @@ https://movies.abes.fr/api/CQ_inversion_debut_fin.csv
 
 
 
-### Unicité des dates
+### Unicité des dates de création et de suppression
 
 ```sparql
 PREFIX wdt: <https://movies.abes.fr/prop/direct/>
