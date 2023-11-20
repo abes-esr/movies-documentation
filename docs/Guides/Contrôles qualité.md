@@ -90,7 +90,7 @@ https://movies.abes.fr/api/CQ_uncite_identifiants_par_entite.csv
 
 :::
 
-#### Identifiant unique attribué à plusieur entité
+#### Identifiant unique attribué à plusieur entités
 
 ```sparql
 PREFIX wdt: <https://movies.abes.fr/prop/direct/>
@@ -128,7 +128,7 @@ HAVING (?count > 1)
 
 Un identifiant unique ne peut être attribué que pour une seule entité
 
-
+https://movies.abes.fr/api/CQ_unicite_identifiants
 
 :::
 
