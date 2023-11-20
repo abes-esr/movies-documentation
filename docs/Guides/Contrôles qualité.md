@@ -1,4 +1,6 @@
-# Contrôle qualité
+# Contrôle qualité (CQ)
+
+L'ensemble des requêtes préfixées par `CQ` dans https://movies.abes.fr/api/, corresspondent aux requêtes de contrôle qualité.
 
 ## Contrôle des dates
 
