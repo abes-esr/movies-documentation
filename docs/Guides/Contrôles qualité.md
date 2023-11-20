@@ -101,6 +101,14 @@ SELECT DISTINCT ?etab ?habiliatation ?probleme ?date ?date_habilitation WHERE {
 }
 ```
 
+:::note
+
+La date de début d'habilitation doit être >= à la date de création de l'établissement. La date de fin d'habilitation doit être <= à la date de suppression de l'établissement.
+
+https://movies.abes.fr/api/CQ_coherence_dates_habilitation.csv
+
+:::
+
 ## Contrôle des identifiants
 
 ### Unicité des identifiants
