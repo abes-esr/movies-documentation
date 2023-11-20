@@ -253,7 +253,7 @@ SELECT ?predecesseur ?predecesseurLabel ?predicat ?successeur ?successeurLabel W
 ```
 :::note
 
-Si la propriété [a pour prédeccesseur](/Ontologie/Propriétés/a pour prédécesseur) est déclarée dans une entité, alors l'inverse ([a pour successeur](/Ontologie/Propriétés/a pour successeur)) doit aussi être déclaré dans l'entité cible.
+Si la propriété [a pour prédeccesseur]("/Ontologie/Propriétés/a pour prédécesseur") est déclarée dans une entité, alors l'inverse [a pour successeur]("/Ontologie/Propriétés/a pour successeur") doit aussi être déclaré dans l'entité cible.
 
 https://movies.abes.fr/api/CQ_successions_manquantes.csv
 
