@@ -77,6 +77,7 @@ https://movies.abes.fr/api/CQ_unicite_dates_creation_suppresion.csv
 ### Unicité des identifiants
 
 ```sparql
+
 PREFIX wdt: <https://movies.abes.fr/prop/direct/>
 PREFIX wd: <https://movies.abes.fr/entity/>
 PREFIX wikibase: <http://wikiba.se/ontology#>
@@ -103,6 +104,12 @@ SELECT ?statement ?problem (count(?identifiant) as ?count) WHERE {
   } UNION {
     ?statement wdt:P3 ?identifiant.
     BIND("Indentifiant code établissement non unique" AS ?problem)
+  } UNION {
+    ?statement wdt:P7 ?identifiant.
+    BIND("Indentifiant SIREN non unique" AS ?problem)
+  } UNION {
+    ?statement wdt:P8 ?identifiant.
+    BIND("Indentifiant SIRET non unique" AS ?problem)
   }
 } GROUP BY ?statement ?problem
 HAVING (?count > 1)
@@ -144,6 +151,12 @@ SELECT ?identifiant ?problem (count(?identifiant) as ?count) WHERE {
   } UNION {
     ?statement wdt:P3 ?identifiant.
     BIND("Indentifiant code établissement non unique" AS ?problem)
+  }  UNION {
+    ?statement wdt:P7 ?identifiant.
+    BIND("Indentifiant SIREN non unique" AS ?problem)
+  } UNION {
+    ?statement wdt:P8 ?identifiant.
+    BIND("Indentifiant SIRET non unique" AS ?problem)
   }
 } GROUP BY ?identifiant ?problem
 HAVING (?count > 1)
