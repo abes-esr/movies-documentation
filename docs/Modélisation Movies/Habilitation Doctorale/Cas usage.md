@@ -10,59 +10,90 @@ tags:
 ## Liste des établissements membres du réseau thèse
 
 ```sparql
-SELECT ?orgLabel ?code_etablissement WHERE {
-  ?org wdt:P1 wd:Q1;
-       wdt:P11 ?code_etablissement.
-  
+PREFIX wdt: <https://movies.abes.fr/prop/direct/>
+PREFIX wd: <https://movies.abes.fr/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <https://movies.abes.fr/prop/>
+PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
+
+SELECT ?nom ?codeEtab WHERE {
+  ?etab wdt:P3 ?codeEtab;
+     wdt:P40 ?nom.
+    
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ```
+
+https://movies.abes.fr/api/membres_reseau_these.csv
 
 ## Lister les habilitations doctorales
 
 ```sparql
-SELECT ?orgLabel ?code_etablissement ?debut ?fin WHERE {
-  ?org wdt:P1 wd:Q1;
-       p:P54 ?habilitation.
+PREFIX wdt: <https://movies.abes.fr/prop/direct/>
+PREFIX wd: <https://movies.abes.fr/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <https://movies.abes.fr/prop/>
+PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
+
+SELECT ?etabLabel ?code_etab ?debut ?fin WHERE {
+  ?etab wdt:P3 ?code_etab;
+     p:P6 ?habiliatation.
   
-  OPTIONAL {
-    ?org wdt:P11 ?code_etablissement 
-  }
-  
-  OPTIONAL { 
-    ?habilitation pq:P12 ?debut.
-  }
-  
-  OPTIONAL { 
-    ?habilitation pq:P13 ?fin.
-  }
+  ?habiliatation pq:P4 ?debut.
+  OPTIONAL {?habiliatation pq:P5 ?fin}.
   
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ```
+https://movies.abes.fr/api/habilitations_doctorales.csv
 
 ## Lister les habilitations doctorales en cours
 
 ```sparql
-SELECT ?orgLabel ?code_etablissement ?debut ?fin WHERE {
-  ?org wdt:P1 wd:Q1;
-       p:P54 ?habilitation.
+PREFIX wdt: <https://movies.abes.fr/prop/direct/>
+PREFIX wd: <https://movies.abes.fr/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <https://movies.abes.fr/prop/>
+PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
+
+SELECT ?etabLabel ?codeEtab ?debut WHERE {
+  ?etab wdt:P3 ?codeEtab;
+     p:P6 ?habiliatation.
   
-  OPTIONAL {
-    ?org wdt:P11 ?code_etablissement 
-  }
-  
-  OPTIONAL {
-    ?habilitation pq:P12 ?debut.
-  }
-  
-  FILTER NOT EXISTS { 
-    ?habilitation pq:P13 ?fin.
-  }
+  OPTIONAL {?habiliatation pq:P4 ?debut}.
+  FILTER NOT EXISTS { ?habiliatation pq:P5 ?fin }.
   
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ```
+
+https://movies.abes.fr/api/habilitations_doctorales_en_cours.csv
+
+## Lister les habilitations doctorales échues
+
+```sparql
+PREFIX wdt: <https://movies.abes.fr/prop/direct/>
+PREFIX wd: <https://movies.abes.fr/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <https://movies.abes.fr/prop/>
+PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
+
+SELECT ?etabLabel ?codeEtab ?debut ?fin WHERE {
+  ?etab wdt:P3 ?codeEtab;
+     p:P6 ?habiliatation.
+  
+  OPTIONAL {?habiliatation pq:P4 ?debut}.
+  ?habiliatation pq:P5 ?fin.
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+```
+
+https://movies.abes.fr/api/habilitations_doctorales_echues.csv
 
 ## Filiations des environnements thèses de l'Université Paris-Saclay (COMUE)
 
