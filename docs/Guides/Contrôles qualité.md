@@ -84,13 +84,53 @@ HAVING (?count > 1)
 ```
 :::note
 
-Une entité ne peut avoir qu'un seul identifiant par famille d'identifiant (RNSR, Paysage, code etab)
+Un identifiant unique ne peut être attribué qu'une seule fois au sein d'une entité.
 
 https://movies.abes.fr/api/CQ_uncite_identifiants_par_entite.csv
 
 :::
 
-#### Unicité d'un identifiant
+#### Identifiant unique attribué à plusieur entité
+
+```sparql
+PREFIX wdt: <https://movies.abes.fr/prop/direct/>
+PREFIX wd: <https://movies.abes.fr/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <https://movies.abes.fr/prop/>
+PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
+
+SELECT ?identifiant ?problem (count(?identifiant) as ?count) WHERE {
+  {
+    ?statement wdt:P36 ?identifiant.
+    BIND("Indentifiant Paysage non unique" AS ?problem) 
+  } UNION {
+    ?statement wdt:P35 ?identifiant.
+    BIND("Indentifiant Idref non unique" AS ?problem)
+  } UNION {
+    ?statement wdt:P64 ?identifiant.
+    BIND("Indentifiant CNRS non unique" AS ?problem)
+  } UNION {
+    ?statement wdt:P70 ?identifiant.
+    BIND("Indentifiant ISNI non unique" AS ?problem)
+  } UNION {
+    ?statement wdt:P33 ?identifiant.
+    BIND("Indentifiant RNSR non unique" AS ?problem)
+  } UNION {
+    ?statement wdt:P3 ?identifiant.
+    BIND("Indentifiant code établissement non unique" AS ?problem)
+  }
+} GROUP BY ?identifiant ?problem
+HAVING (?count > 1)
+```
+
+:::note
+
+Un identifiant unique ne peut être attribué que pour une seule entité
+
+
+
+:::
 
 ## Contrôle des liens
 
@@ -125,7 +165,7 @@ SELECT ?predecesseur ?predecesseurLabel ?predicat ?successeur ?successeurLabel W
 }
 ```
 
-:::notes
+:::note
 
 Si un prédécesseur est déclaré dans une entité la réciproque à pour successeur doit aussi être déclaré dans l'entité cible et inversement
 
