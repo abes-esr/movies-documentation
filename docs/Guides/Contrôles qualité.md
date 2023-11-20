@@ -246,12 +246,42 @@ SELECT ?predecesseur ?predecesseurLabel ?predicat ?successeur ?successeurLabel W
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ```
-
 :::note
 
 Si un prédécesseur est déclaré dans une entité la réciproque à pour successeur doit aussi être déclaré dans l'entité cible et inversement
 
 https://movies.abes.fr/api/CQ_successions_manquantes.csv
+
+:::
+
+### Liens de successions circulaires
+
+```sparql
+PREFIX wdt: <https://movies.abes.fr/prop/direct/>
+PREFIX wd: <https://movies.abes.fr/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <https://movies.abes.fr/prop/>
+PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
+
+SELECT ?source ?target WHERE {
+  {
+    ?source (wdt:P41+) ?target.
+    FILTER(?source = ?target)
+  }
+  UNION
+  {
+    ?source (wdt:P42+) ?target.
+    FILTER(?source = ?target)
+  }
+}
+```
+
+:::note
+
+Un établissement ne peut pas être le précesseur ou le successeur de lui même et ce à n'importe quel degré
+
+https://movies.abes.fr/api/CQ_successions_circulaires.csv
 
 :::
 
