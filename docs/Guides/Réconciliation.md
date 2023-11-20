@@ -2,7 +2,7 @@
 
 ### Principes généraux
 
-La réconciliation est le processus qui permet d'aligner des entités et des propriétés d'un projet OpenRefine avec une source de données externe. Ce processus est l'étape préalable à toute opération d'export de données dans une instace Wikibase depuis OpenRefine.
+La réconciliation est le processus qui permet d'aligner des entités d'un projet OpenRefine avec une source de données externe. Ce processus est l'étape préalable à toute opération d'export de données dans une instace Wikibase depuis OpenRefine.
 
 ### Configurer le réconciliateur
 
