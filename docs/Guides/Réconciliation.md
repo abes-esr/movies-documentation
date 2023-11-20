@@ -18,7 +18,7 @@ Lorsqu'un réconciliateur est configuré il devient utilisable dans l'ensemble d
 
 :::warning
 
-Avant de lancer la réconciliation assurez-vous que Movies est est bien l'instance wikibase utilisée par OpenRefine.
+Avant de lancer la réconciliation assurez-vous que Movies est bien l'instance wikibase utilisée par OpenRefine.
 
 ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/2d2f409d-1286-40dc-bf29-53ebc84a8e21)
 
