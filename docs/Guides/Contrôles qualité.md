@@ -33,6 +33,9 @@ SELECT ?statement ?problem ?debut ?fin WHERE {
 
 :::note
 
+La date de cration d'une organisation doit être inférieure à sa date de suppression.
+Pour chaque statements, la valeur de l'attribut début doit être inférieure à la valeur de l'attribut fin.
+
 https://movies.abes.fr/api/CQ_inversion_debut_fin.csv
 
 :::
@@ -62,7 +65,7 @@ HAVING (?count > 1)
 ```
 :::note
 
-Il ne peut y avoir qu'une seule date de création et de fermeture par établissement
+Il ne peut y avoir qu'une seule date de création et de fermeture par établissement.
 
 https://movies.abes.fr/api/CQ_unicite_dates_creation_suppresion.csv
 
@@ -214,7 +217,7 @@ HAVING (?count > 1)
 
 :::note
 
-Un identifiant unique ne peut être attribué que pour une seule entité
+Un identifiant unique ne peut être attribué que pour une seule entité.
 
 https://movies.abes.fr/api/CQ_unicite_identifiants
 
@@ -281,7 +284,7 @@ SELECT ?source ?target WHERE {
 
 :::note
 
-Un établissement ne peut pas être le précesseur ou le successeur de lui même et ce à n'importe quel degré
+Un établissement ne peut pas être le précesseur ou le successeur de lui même et ce à n'importe quel degré.
 
 https://movies.abes.fr/api/CQ_successions_circulaires.csv
 
