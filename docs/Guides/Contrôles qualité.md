@@ -115,7 +115,7 @@ https://movies.abes.fr/api/CQ_uncite_identifiants_par_entite.csv
 
 :::
 
-#### Identifiant unique attribué à plusieur entités
+### Identifiant unique attribué à plusieur entités
 
 ```sparql
 PREFIX wdt: <https://movies.abes.fr/prop/direct/>
@@ -163,10 +163,6 @@ https://movies.abes.fr/api/CQ_unicite_identifiants
 ### Liens de succession incomplet
 
 ```sparql
-#+ endpoint: https://movies.abes.fr/proxy/wdqs/bigdata/namespace/wdq/sparql?
-#+ endpoint_in_url: False
-#+ description: Liste successions manquantes. Les triplets retournés correspondent aux informations à ajouter.
-
 PREFIX wdt: <https://movies.abes.fr/prop/direct/>
 PREFIX wd: <https://movies.abes.fr/entity/>
 PREFIX wikibase: <http://wikiba.se/ontology#>
