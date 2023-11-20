@@ -47,7 +47,14 @@ SELECT ?etabLabel ?code_etab ?debut ?fin WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ```
+
+Pour l'ensemble des établissements :
+
 https://movies.abes.fr/api/habilitations_doctorales.csv
+
+Ou pour un seul établissement (par code établissement) :
+
+https://movies.abes.fr/api-git/abes-esr/movies-api/habilitation_doctorale?codeEtab=PESC
 
 ## Lister les habilitations doctorales en cours
 
