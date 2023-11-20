@@ -31,7 +31,7 @@ SELECT ?statement ?problem ?debut ?fin WHERE {
 
 :::note
 
-https://movies.abes.fr/api/inversion_debut_fin.csv
+https://movies.abes.fr/api/CQ_inversion_debut_fin.csv
 
 :::
 
