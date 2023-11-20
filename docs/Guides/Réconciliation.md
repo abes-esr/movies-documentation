@@ -110,9 +110,17 @@ Avant d'importer les données il est possible de repérer certaines erreurs grâ
 ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/ffcc0f62-a542-4d17-aa38-d6883fd82c7a)
 
 
-### Importer des données
+### Exporter des données
 
-Une fois les données alignées et le schéma créé il est possible d'exporter les données vers Wikibase.
+Une fois les données alignées et le schéma créé il est possible d'exporter les données vers Wikibase (`Wikidata` ⓵ -> `Publier les modifications sur Wikibase` ⓶.
+
+![image](https://github.com/abes-esr/movies-documentation/assets/60341438/223475fa-ad84-4409-95e5-f5c69fd02fb9)
+
+La fenêtre qui s'ouvre permet de saisir un message de commit ⓵ et de publier les modification ⓶. Si l'utilisateur n'est pas déjà authentifier un pop up s'ouvre pour demander l'authentification de l'utilisateur.
+
+Avant de publier les modifications il faut vérifier que l'instance Wikibase est bien la bonne.
+
+![image](https://github.com/abes-esr/movies-documentation/assets/60341438/188d3e55-acd0-4f21-aa58-b7a403bad130)
 
 :::caution
 
