@@ -166,7 +166,7 @@ HAVING (?count > 1)
 
 Un identifiant unique ne peut être attribué qu'une seule fois par entité.
 
-https://movies.abes.fr/api/CQ_uncite_identifiants_par_entite.csv
+https://movies.abes.fr/api/CQ_unicite_identifiants_par_entite.csv
 
 :::
 
