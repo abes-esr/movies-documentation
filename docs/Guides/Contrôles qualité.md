@@ -39,7 +39,32 @@ https://movies.abes.fr/api/CQ_inversion_debut_fin.csv
 
 ### Unicité des dates
 
-* Il ne peut y avoir qu'une seule date de création et de fermeture par établissement
+```sparql
+PREFIX wdt: <https://movies.abes.fr/prop/direct/>
+PREFIX wd: <https://movies.abes.fr/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <https://movies.abes.fr/prop/>
+PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
+
+SELECT ?statement ?problem (count(?c) as ?count) WHERE {
+  {
+    ?statement wdt:P10 ?c.
+    BIND("Plusieur dates de création" AS ?problem)
+  } UNION {
+    ?statement wdt:P11 ?c.
+    BIND("Plusieur dates de suppression" AS ?problem)
+  }
+} GROUP BY ?statement ?problem
+HAVING (?count > 1)
+```
+:::note
+
+Il ne peut y avoir qu'une seule date de création et de fermeture par établissement
+
+https://movies.abes.fr/api/CQ_unicite_dates_creation_suppresion.csv
+
+:::
 
 ### Cohérence des date d'existence et des date de contrat
 
