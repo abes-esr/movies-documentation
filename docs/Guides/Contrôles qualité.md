@@ -68,11 +68,14 @@ https://movies.abes.fr/api/CQ_unicite_dates_creation_suppresion.csv
 
 :::
 
-### Cohérence des date d'existence et des date de contrat
+### Cohérence des dates d'existence et des date de contrat
 
 
+:::note
 
-### Cohérence des date d'existence et des date d'habilitation
+:::
+
+### Cohérence des dates d'existence et des date d'habilitation
 
 ```sparql
 PREFIX wdt: <https://movies.abes.fr/prop/direct/>
