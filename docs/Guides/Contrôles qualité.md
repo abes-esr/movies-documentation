@@ -72,6 +72,35 @@ https://movies.abes.fr/api/CQ_unicite_dates_creation_suppresion.csv
 
 ### Cohérence des date d'existence et des date d'habilitation
 
+```sparql
+PREFIX wdt: <https://movies.abes.fr/prop/direct/>
+PREFIX wd: <https://movies.abes.fr/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <https://movies.abes.fr/prop/>
+PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
+
+SELECT DISTINCT ?etab ?habiliatation ?probleme ?date ?date_habilitation WHERE {
+  {
+    ?etab p:P6 ?habiliatation;
+      wdt:P10 ?date.
+    
+    ?habiliatation pq:P4 ?date_habilitation.
+    BIND("Le début d'habilitation est inférieur à la date de création de l'établissement" AS ?probleme)
+    FILTER(?date_habilitation < ?date)
+  }
+  UNION
+  {
+    ?etab p:P6 ?habiliatation;
+      wdt:P11 ?date.
+    
+    ?habiliatation pq:P5 ?date_habilitation.
+    BIND("La fin d'habilitation est supérieure à la date de suppression de l'établissement" AS ?probleme)
+    FILTER(?date_habilitation > ?date)
+  }
+}
+```
+
 ## Contrôle des identifiants
 
 ### Unicité des identifiants
