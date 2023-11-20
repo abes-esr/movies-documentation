@@ -122,6 +122,6 @@ Le compte Bot dispose de quotas d'écriture plus élevé qu'un utilisateur lambd
 
 :::
 
-## Références :
+## Références
 
 * https://openrefine.org/docs/manual/reconciling
