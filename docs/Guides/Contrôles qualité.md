@@ -218,7 +218,7 @@ https://movies.abes.fr/api/CQ_unicite_identifiants
 ## Contrôle des liens
 
 
-### Liens de succession incomplet
+### Liens de succession incomplets
 
 ```sparql
 PREFIX wdt: <https://movies.abes.fr/prop/direct/>
