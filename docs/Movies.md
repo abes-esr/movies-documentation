@@ -7,8 +7,8 @@ slug: /
 
 Cette documentation se divise en trois grande section :
 
-* Les Guides, qui décrit l'utilisation de Wikibase de l'API et d'OpenRefine
-* La modélisation Movies, qui décrit la manière dont doivent être créer les différentes entités dans Wikibase (Etablissements, Contrats, Habilitationss)
+* Les Guides, qui décrivent l'utilisation de Wikibase de l'API GRLC et d'OpenRefine
+* La modélisation Movies, qui décrit la manière dont doivent être créés les différentes entités dans Wikibase (Etablissements, Contrats, Habilitationss)
 * L'ontologie, qui décrit de manière extensive les classes et propriétés de la modélisation Movies.
 
 # Accès rapide
