@@ -58,7 +58,7 @@ L'API permet de récupérer les données au foramt TTL, JSON ou CSV. Pour récup
 
 Par exemple : https://movies.abes.fr/api/CQ_coherence_dates_habilitation.csv permet de récupérer les données au format CSV.
 
-## Paramètre des requêtes
+## Paramètres des requêtes
 
  Les variables de la requête qui commencent par `?_` sont transformés automatiquement en paramètre de l'ULR. Par exemple :
 
