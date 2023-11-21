@@ -64,6 +64,14 @@ Après chaque suppression il faut vérifier les liens morts
 
 ## Voir les dernières modifications
 
+### Lister les contributions de son compte
+
+![image](https://github.com/abes-esr/movies-documentation/assets/60341438/74e8b466-ad7d-485e-8409-b27591371773)
+
+### Lister toutes les contributions
+
+* https://movies.abes.fr/wiki/Special:Contributions
+
 ### Dernières modifications d'un utilisateur
 
 ## Supprimer des données en masse
