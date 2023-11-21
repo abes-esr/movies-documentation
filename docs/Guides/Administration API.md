@@ -46,7 +46,7 @@ Le nom du fichier contenant la requête sert à générer le chemin de l'URL de 
 
 Le fichier CQ_coherence_dates_habilitation.rq générera la requête suivante : https://movies.abes.fr/api/CQ_coherence_dates_habilitation.
 
-Chaque requête est préfixé pour mieux les identifier et les grouper dans la documentation Open API de Movies :
+Chaque requête est préfixée pour faciliter leur identifification et les grouper dans la documentation Open API de Movies :
 
 * Les requêtes qui concernent le contrôle qualité doivent être préfixées avec `CQ_`
 * Les requêtes qui concernent le service des thèses doivent être préfixées avec `TH_`
