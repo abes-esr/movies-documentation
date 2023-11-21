@@ -26,6 +26,8 @@ Ou depuis la page d'une entité :
 
 ## Ajouter/Modifier/Supprimer une propriété
 
+* Créer une nouvelle propriété : https://movies.abes.fr/wiki/Special:NewProperty
+
 :::note
 
 Après chaque suppression il faut vérifier les liens morts
@@ -33,6 +35,8 @@ Après chaque suppression il faut vérifier les liens morts
 :::
 
 ## Ajouter/Modifier/Supprimer une entité
+
+* Créer une entité : https://movies.abes.fr/wiki/Special:NewItem
 
 :::note
 
