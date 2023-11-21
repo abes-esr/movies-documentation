@@ -7,6 +7,12 @@
 
 ## Lister l'ensemble des entités
 
+* https://movies.abes.fr/wiki/Special:AllPages?from=&to=&namespace=120
+
+## Lister l'ensemble des propriétés
+
+* https://movies.abes.fr/wiki/Special:AllPages?from=&to=&namespace=122
+
 ## Fusioner des entités
 
 * https://movies.abes.fr/wiki/Special:MergeItems
