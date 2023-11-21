@@ -7,6 +7,8 @@ import SparqlContrat from '/docs/Modélisation Movies/Contrat de documentation �
 import SparqlDoctorat from '/docs/Modélisation Movies/Habilitation Doctorale/Cas usage.md'
 import SparqlCq from '/docs/Guides/Contrôles qualité.md'
 
+Cette page recense l'ensemble des requêtes SPARQL de la documentation.
+
 <SparqlEtab components={props.components} />
 <SparqlContrat components={props.components} />
 <SparqlDoctorat components={props.components} />
