@@ -11,7 +11,7 @@
 
 ## Lister les entités liées à une entité :
 
-https://movies.abes.fr/wiki/Special:WhatLinksHere. Il faut saisir `Item:Q` suivit du nombre de l'entité dans le formulaire.
+* https://movies.abes.fr/wiki/Special:WhatLinksHere. Il faut saisir `Item:Q` suivit du nombre de l'entité dans le formulaire.
 
 Ou depuis la page d'une entité :
 
