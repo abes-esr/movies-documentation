@@ -33,7 +33,7 @@ SELECT ?statement ?problem ?debut ?fin WHERE {
 
 :::note
 
-La date de cration d'une organisation doit être inférieure à sa date de suppression.
+La date de création d'une organisation doit être inférieure à sa date de suppression.
 Pour chaque statements, la valeur de l'attribut `début` doit être inférieure à la valeur de l'attribut `fin`.
 
 https://movies.abes.fr/api/CQ_inversion_debut_fin.csv
