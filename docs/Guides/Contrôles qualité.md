@@ -1,6 +1,6 @@
 # Contrôle qualité (CQ)
 
-L'ensemble des requêtes préfixées par `CQ` dans https://movies.abes.fr/api/, corresspondent aux requêtes de contrôle qualité.
+Cette section détail l'ensemble des requêtes de contrôle qualité. Dans l'[API de Movies](https://movies.abes.fr/api/) ces requêtes sont préfixé par `CQ`.
 
 ## Contrôle des dates
 
@@ -34,13 +34,11 @@ SELECT ?statement ?problem ?debut ?fin WHERE {
 :::note
 
 La date de cration d'une organisation doit être inférieure à sa date de suppression.
-Pour chaque statements, la valeur de l'attribut début doit être inférieure à la valeur de l'attribut fin.
+Pour chaque statements, la valeur de l'attribut `début` doit être inférieure à la valeur de l'attribut `fin`.
 
 https://movies.abes.fr/api/CQ_inversion_debut_fin.csv
 
 :::
-
-
 
 ### Unicité des dates de création et de suppression
 
@@ -111,9 +109,9 @@ SELECT DISTINCT ?etab ?habiliatation ?probleme ?date ?date_habilitation WHERE {
 
 :::note
 
-La date de début d'habilitation doit être >= à la date de création de l'établissement. La date de fin d'habilitation doit être <= à la date de suppression de l'établissement.
+La date de début d'habilitation doit être supérieure ou égal à la date de création de l'établissement. La date de fin d'habilitation doit être inférieure ou égale à la date de suppression de l'établissement.
 
-⚠️ Dans certains cas l'erreur retournée provient du niveau de précision de la date. Certaines dates sont arrondies à l'année faute de meilleure précision.
+⚠️ Dans certains cas l'erreur retournée provient du niveau de précision de la date : certaines dates sont arrondies à l'année.
 
 https://movies.abes.fr/api/CQ_coherence_dates_habilitation.csv
 
@@ -225,7 +223,6 @@ https://movies.abes.fr/api/CQ_unicite_identifiants
 
 ## Contrôle des liens
 
-
 ### Liens de succession incomplets
 
 ```sparql
@@ -253,13 +250,13 @@ SELECT ?predecesseur ?predecesseurLabel ?predicat ?successeur ?successeurLabel W
 ```
 :::note
 
-Si la propriété [a pour prédeccesseur]("/Ontologie/Propriétés/a pour prédécesseur") est déclarée dans une entité, alors l'inverse [a pour successeur]("/Ontologie/Propriétés/a pour successeur") doit aussi être déclaré dans l'entité cible.
+Si la propriété [a pour prédeccesseur](/Ontologie/Propriétés/a pour prédécesseur) est déclarée dans une entité, alors la propriété inverse [a pour successeur]("/Ontologie/Propriétés/a pour successeur") doit aussi être déclarée dans l'entité cible.
 
 https://movies.abes.fr/api/CQ_successions_manquantes.csv
 
 :::
 
-### Liens de successions circulaires
+### Liens de succession circulaires
 
 ```sparql
 PREFIX wdt: <https://movies.abes.fr/prop/direct/>
