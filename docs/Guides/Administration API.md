@@ -60,7 +60,9 @@ Par exemple : [https://movies.abes.fr/api/CQ_coherence_dates_habilitation.csv pe
 
 ## Paramètres des requêtes
 
- Les variables de la requête qui commencent par `?_` sont transformés automatiquement en paramètre de l'ULR. Par exemple :
+ Les variables de la requête qui commencent par `?_` sont transformés automatiquement en paramètre de l'ULR. La requête ci-dessous permet d'avoir une URL avec la structure suivante : https://movies.abes.fr/api/TH_habilitation_doctorale.csv?codeEtab=UPAS. Au moment de l'exécution de la requête `?_codeEtab` est automatiquement substitué par la valeur passée en argument de la requête : `UPAS`.
+
+ Il est possible de spécifier plusieurs arguments pour une requête.
 
  ```sparql title="TH_habilitation_doctorale.rq" showLineNumbers
 #+ endpoint: https://movies.abes.fr/proxy/wdqs/bigdata/namespace/wdq/sparql?
@@ -85,9 +87,6 @@ SELECT ?etabLabel ?debut ?fin WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ```
-Permet d'avoir une requête avec la structure suivante : https://movies.abes.fr/api/TH_habilitation_doctorale.csv?codeEtab=UPAS. Au moment de l'exécution de la requête `?_codeEtab` est automatiquement substitué par la valeur passée en argument de la requête : `UPAS`. 
-
-Il est possible de spécifier plusieurs argument pour une requête.
 
 ## Limitations
 
