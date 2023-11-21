@@ -1,5 +1,7 @@
 # Administration de Wikibase
 
+L'administration de Wikibase est réalisée principalement depuis la page ["Pages spéciales"](https://movies.abes.fr/wiki/Special:SpecialPages). Cette section liste les liens les plus utiles pour l'administration de Wikibase.
+
 ## Gestion des comptes / Authentification
 
 **La gestion des compte ne doit pas être faite depuis l'interface Wikibase.** La gestion des comptes est assurée par LDAP. Les comptes BOT qui disposent de droits spécifiques pour intervenir sur de grosses volumétries sont créés automatiquement au lancement du serveur Movies.
