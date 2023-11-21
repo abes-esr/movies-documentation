@@ -9,6 +9,14 @@
 
 * https://movies.abes.fr/wiki/Special:AllPages?from=&to=&namespace=120
 
+## Lister les entités liées à une entité :
+
+https://movies.abes.fr/wiki/Special:WhatLinksHere. Il faut saisir `Item:Q` suivit du nombre de l'entité dans le formulaire.
+
+Ou depuis la page d'une entité :
+
+![image](https://github.com/abes-esr/movies-documentation/assets/60341438/ebd6a1f2-fd55-4d92-b0c2-ee09df849f1b)
+
 ## Lister l'ensemble des propriétés
 
 * https://movies.abes.fr/wiki/Special:AllPages?from=&to=&namespace=122
