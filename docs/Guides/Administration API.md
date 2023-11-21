@@ -15,7 +15,6 @@ Par exemple :
 
  ```sparql title="TH_habilitation_doctorale.rq" showLineNumbers
 // highlight-start
-#+ endpoint: https://movies.abes.fr/proxy/wdqs/bigdata/namespace/wdq/sparql?
 #+ endpoint_in_url: False
 #+ description: Liste les habilitations doctorales d'un établissement
 // highlight-end
@@ -65,7 +64,6 @@ Par exemple : [https://movies.abes.fr/api/CQ_coherence_dates_habilitation.csv pe
  Il est possible de spécifier plusieurs arguments pour une requête.
 
  ```sparql title="TH_habilitation_doctorale.rq" showLineNumbers
-#+ endpoint: https://movies.abes.fr/proxy/wdqs/bigdata/namespace/wdq/sparql?
 #+ endpoint_in_url: False
 #+ description: Liste les habilitations doctorales d'un établissement
 
