@@ -2,13 +2,13 @@
 
 ### Principes généraux
 
-La réconciliation est le processus qui permet d'aligner des entités d'un projet OpenRefine avec une source de données externe. Ce processus est l'étape préalable à toute opération d'export de données dans une instace Wikibase depuis OpenRefine.
+La réconciliation est le processus qui permet d'aligner des entités d'un projet OpenRefine avec une source de données externe. Ce processus est l'étape préalable à toute opération d'export de données dans une instance Wikibase depuis OpenRefine.
 
 ### Configurer le réconciliateur
 
 :::info
 
-Le réconciliateur est déjà configuré sur l'instance OpenRefine refmovies. Cette section n'est utile que dans les cas où il est nécessaire de configurer le réconciliateur sur une autre instance d'OpenRefine.
+Le réconciliateur est déjà configuré sur l'instance OpenRefine [refmovies](https://refmovies.abes.fr/). Cette section n'est utile que dans les cas où il est nécessaire de configurer le réconciliateur sur une autre instance d'OpenRefine.
 
 :::
 
@@ -18,7 +18,7 @@ Lorsqu'un réconciliateur est configuré il devient utilisable dans l'ensemble d
 
 :::warning
 
-Avant de lancer la réconciliation assurez-vous que Movies est bien l'instance wikibase utilisée par OpenRefine.
+Avant de lancer la réconciliation assurez-vous que Movies est bien l'instance Wikibase utilisée par OpenRefine.
 
 ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/2d2f409d-1286-40dc-bf29-53ebc84a8e21)
 
@@ -27,7 +27,7 @@ Avant de lancer la réconciliation assurez-vous que Movies est bien l'instance w
 
 :::
 
-Dans un projet OpenRefine la réconciliation des données est réalisée colonne par colonne. La réconciliation peut s'appliquer à une entité ou une propriété.
+Dans un projet OpenRefine la réconciliation des données est réalisée colonne par colonne. La réconciliation permet d'aligner les valeurs d'une colonne avec des entités Wikibase.
 
 ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/dd9181be-a458-406d-b751-2e3e220bf8e3)
 
@@ -102,13 +102,11 @@ La section de création d'entité permet de réaliser les actions suivantes
 
 ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/8cfb3192-686f-4fa9-80c6-cd54603e861c)
 
-
 #### Identifier les erreurs et prévisualiser les modifications
 
 Avant d'importer les données il est possible de repérer certaines erreurs grâce à l'onglet `Problèmes` ⓵ et de prévisualiser les modifications grâce à l'onget `Prévisualisation` ⓶
 
 ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/ffcc0f62-a542-4d17-aa38-d6883fd82c7a)
-
 
 ### Exporter des données
 
