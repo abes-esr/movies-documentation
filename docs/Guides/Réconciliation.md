@@ -1,10 +1,13 @@
-## Réconcilier et exporter des données dans Wikibase
+---
+id: head-metadatas
+title: Réconcilier et exporter des données dans Wikibase
+---
 
-### Principes généraux
+# Principes généraux
 
 La réconciliation est le processus qui permet d'aligner des entités d'un projet OpenRefine avec une source de données externe. Ce processus est l'étape préalable à toute opération d'export de données dans une instance Wikibase depuis OpenRefine.
 
-### Configurer le réconciliateur
+# Configurer le réconciliateur
 
 :::info
 
@@ -14,7 +17,7 @@ Le réconciliateur est déjà configuré sur l'instance OpenRefine [refmovies](h
 
 Lorsqu'un réconciliateur est configuré il devient utilisable dans l'ensemble des projets de l'instance OpenRefine.
 
-### Réconcilier les données
+# Réconcilier les données
 
 :::warning
 
@@ -33,7 +36,7 @@ Dans un projet OpenRefine la réconciliation des données est réalisée colonne
 
 Depuis l'entête de la colonne colonne à réconcilier ⓵ il faut sélectionner l'action : `Réconcilier` ⓶ > `Démarer la réconciliation`.⓷
 
-#### Configurer la réconciliation
+## Configurer la réconciliation
 
 ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/369854bb-00c3-4d94-a2e7-bb5543dada10)
 
@@ -48,7 +51,7 @@ Il est ensuite possible de configurer la réconciliation en choisissant :
 
 Cliquer sur `Démarer la réconciliation` permet de lancer le processus de réconciliation. ⓷
 
-#### Evaluation des candidats
+## Evaluer les candidats
 
 Une fois les candidats identifiés trois options sont possibles :
 
@@ -70,9 +73,9 @@ Les actions "Apparier le candidat" et "créer un nouvel élément" entité peuve
 
 :::
 
-### Saisir le schéma de données
+## Saisir le schéma de données
 
-#### L'interface
+### L'interface
 
 La saisie du schéma de données permet de :
 
@@ -90,7 +93,7 @@ L'interface de saisie des données se divise en trois parties :
 * La section de gestion des colonnes (les colonnes soulignées en verts correspondent aux colonnes alignées). Les colonnes peuvent être glissées dans la section de création d'entité. ⓶
 * La section de création d'entité ⓷
 
-#### Créer une entité
+## Créer/modifier de nouvelles entités
 
 ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/c4c517d9-282d-4501-87bb-8f1adeef1070)
 
@@ -102,13 +105,13 @@ La section de création d'entité permet de réaliser les actions suivantes
 
 ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/8cfb3192-686f-4fa9-80c6-cd54603e861c)
 
-#### Identifier les erreurs et prévisualiser les modifications
+## Identifier les erreurs et prévisualiser les modifications
 
 Avant d'importer les données il est possible de repérer certaines erreurs grâce à l'onglet `Problèmes` ⓵ et de prévisualiser les modifications grâce à l'onget `Prévisualisation` ⓶
 
 ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/ffcc0f62-a542-4d17-aa38-d6883fd82c7a)
 
-### Exporter des données
+## Exporter des données
 
 Une fois les données alignées et le schéma créé il est possible d'exporter les données vers Wikibase (`Wikidata` ⓵ -> `Publier les modifications sur Wikibase` ⓶.
 
