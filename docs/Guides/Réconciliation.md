@@ -2,7 +2,6 @@
 title: Réconcilier et exporter des données dans Wikibase
 ---
 
-
 # Réconcilier et exporter des données dans Wikibase
 
 ## Principes généraux
