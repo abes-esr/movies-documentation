@@ -85,9 +85,15 @@ SELECT ?etabLabel ?debut ?fin WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ```
-Permet d'avoir une requête avec la structure suivante : https://movies.abes.fr/api/TH_habilitation_doctorale.csv?codeEtab=UPAS. Au moment de l'exécution de la requête ?_codeEtab est automatiquement substitué par la valeur passé en argument de la requête : `UPAS`.
+Permet d'avoir une requête avec la structure suivante : https://movies.abes.fr/api/TH_habilitation_doctorale.csv?codeEtab=UPAS. Au moment de l'exécution de la requête `?_codeEtab` est automatiquement substitué par la valeur passée en argument de la requête : `UPAS`. 
+
+Il est possible de spécifier plusieurs argument pour une requête.
 
 ## Limitations
 
 * Il n'est pour le moment pas possible de créer des requêtes de type ASK.
 * Il n'est pas possible de créer des requêtes qui modifient ou ajoutent des données. Ces requêtes sont filtrées par Movies.
+
+## Références
+
+* [Documentation de GRLC](https://github.com/CLARIAH/grlc)
