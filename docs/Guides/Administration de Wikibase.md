@@ -1,9 +1,8 @@
 # Administration de Wikibase
 
-## Authentification
+## Gestion des comptes / Authentification
 
-* LDAP
-* Comptes BOT (Droits spécifiques pour intervenir sur de grosses volumétries)
+La gestion des comptes est assurée par LDAP. Les comptes BOT qui disposent de droits spécifiques pour intervenir sur de grosses volumétries, sont créés automatiquement au lancement du serveur Movies. La gestion des compte ne doit pas être faite depuis l'interface Wikibase.
 
 ## Lister l'ensemble des entités
 
