@@ -59,7 +59,7 @@ https://movies.abes.fr/api/habilitations_doctorales.csv
 
 Ou pour un seul établissement (par code établissement) :
 
-https://movies.abes.fr/api-git/abes-esr/movies-api/habilitation_doctorale?codeEtab=PESC
+https://movies.abes.fr/api/movies-api/habilitation_doctorale?codeEtab=PESC
 
 :::
 
