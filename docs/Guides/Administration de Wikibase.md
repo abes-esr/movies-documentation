@@ -13,18 +13,26 @@
 
 ## Ajouter/Modifier/Supprimer une propriété
 
--> vérifier les liens morts
+:::note
+
+Après chaque suppression il faut vérifier les liens morts
+
+:::
 
 ## Ajouter/Modifier/Supprimer une entité
 
--> vérifier les liens morts
+:::note
+
+Après chaque suppression il faut vérifier les liens morts
+
+:::
 
 ## Indentifier les liens morts
 
 * https://movies.abes.fr/wiki/Special:BrokenRedirects
 * https://movies.abes.fr/wiki/Special:DeadendPages
 
-## Voir les dernière modifications
+## Voir les dernières modifications
 
 ### Dernières modifications d'un utilisateur
 
@@ -35,3 +43,7 @@
 Cette action est irréversible
 
 :::
+
+Le plugin Nuke permet de supprimer des entités par lot.
+
+* https://movies.abes.fr/wiki/Special:Nuke
