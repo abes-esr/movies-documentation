@@ -38,6 +38,13 @@ Après chaque suppression il faut vérifier les liens morts
 
 * Créer une entité : https://movies.abes.fr/wiki/Special:NewItem
 
+* Supprimer une entité : 
+
+La suppression est réalisée depuis l'interface de Wikibase (`Plus` ① -> `Supprimer` ②), après authentification.
+
+![image](https://github.com/abes-esr/movies-documentation/assets/60341438/6d8dfed5-4f0d-48a8-bafa-14b69ccb9ed2)
+
+
 :::note
 
 Après chaque suppression il faut vérifier les liens morts
