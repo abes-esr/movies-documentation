@@ -56,7 +56,7 @@ Chaque requête est préfixé pour mieux les identifier et les grouper dans la d
 
 L'API permet de récupérer les données aux formats TTL, JSON ou CSV. Pour récupérer tel ou tel format il suffit de suffixer la requête avec `.ttl`, `.json` ou `.csv`. Le nom du format doit être placé avant les paramètre de la requête.
 
-Par exemple : [https://movies.abes.fr/api/CQ_coherence_dates_habilitation**.csv**](https://movies.abes.fr/api/CQ_coherence_dates_habilitation.csv) permet de récupérer les données au format CSV ; [https://movies.abes.fr/api/TH_habilitation_doctorale**.csv**?codeEtab=UPAS](https://movies.abes.fr/api/TH_habilitation_doctorale.csv?codeEtab=UPAS).
+Par exemple : [https://movies.abes.fr/api/CQ_coherence_dates_habilitation.csv permet de récupérer les données au format CSV ; https://movies.abes.fr/api/TH_habilitation_doctorale.csv?codeEtab=UPAS permet de récupérer les données au format JSON.
 
 ## Paramètres des requêtes
 
