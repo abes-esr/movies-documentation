@@ -40,7 +40,7 @@ SELECT ?etabLabel ?debut ?fin WHERE {
 
 Le nom du fichier contenant la requête sert à générer le chemin de l'URL de la requête. Par exemple :
 
-Le fichier CQ_coherence_dates_habilitation.rq générera la requête suivante : https://movies.abes.fr/api/CQ_coherence_dates_habilitation.rq.
+Le fichier CQ_coherence_dates_habilitation.rq générera la requête suivante : https://movies.abes.fr/api/CQ_coherence_dates_habilitation.
 
 Chaque requête est préfixé pour mieux les identifier et les grouper dans la documentation Open API de Movies :
 
