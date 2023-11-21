@@ -13,7 +13,7 @@ Chaque fichier de requête (fichier `.rq`) se divise en deux parties :
 
 Par exemple : 
 
- ```sparql
+ ```sparql title="TH_habilitation_doctorale.rq" showLineNumbers
 // highlight-start
 #+ endpoint: https://movies.abes.fr/proxy/wdqs/bigdata/namespace/wdq/sparql?
 #+ endpoint_in_url: False
@@ -62,7 +62,7 @@ Par exemple : https://movies.abes.fr/api/CQ_coherence_dates_habilitation.csv per
 
  Les variables de la requête qui commencent par `?_` sont transformés automatiquement en paramètre de l'ULR. Par exemple :
 
- ```sparql
+ ```sparql title="TH_habilitation_doctorale.rq" showLineNumbers
 #+ endpoint: https://movies.abes.fr/proxy/wdqs/bigdata/namespace/wdq/sparql?
 #+ endpoint_in_url: False
 #+ description: Liste les habilitations doctorales d'un établissement
@@ -85,6 +85,7 @@ SELECT ?etabLabel ?debut ?fin WHERE {
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ```
+Permet d'avoir une requête avec la structure suivante : https://movies.abes.fr/api/TH_habilitation_doctorale.csv?codeEtab=UPAS. Au moment de l'exécution de la requête ?_codeEtab est automatiquement substitué par la valeur passé en argument de la requête : `UPAS`.
 
 ## Limitations
 
