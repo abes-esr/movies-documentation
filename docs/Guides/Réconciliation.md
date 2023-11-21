@@ -1,5 +1,4 @@
 ---
-id: head-metadatas
 title: Réconcilier et exporter des données dans Wikibase
 ---
 
