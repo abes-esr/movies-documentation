@@ -2,11 +2,14 @@
 title: Réconcilier et exporter des données dans Wikibase
 ---
 
-# Principes généraux
+
+# Réconcilier et exporter des données dans Wikibase
+
+## Principes généraux
 
 La réconciliation est le processus qui permet d'aligner des entités d'un projet OpenRefine avec une source de données externe. Ce processus est l'étape préalable à toute opération d'export de données dans une instance Wikibase depuis OpenRefine.
 
-# Configurer le réconciliateur
+## Configurer le réconciliateur
 
 :::info
 
@@ -16,7 +19,7 @@ Le réconciliateur est déjà configuré sur l'instance OpenRefine [refmovies](h
 
 Lorsqu'un réconciliateur est configuré il devient utilisable dans l'ensemble des projets de l'instance OpenRefine.
 
-# Réconcilier les données
+## Réconcilier les données
 
 :::warning
 
@@ -73,8 +76,6 @@ Les actions "Apparier le candidat" et "créer un nouvel élément" entité peuve
 :::
 
 ## Saisir le schéma de données
-
-### L'interface
 
 La saisie du schéma de données permet de :
 
