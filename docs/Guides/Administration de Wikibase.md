@@ -50,7 +50,7 @@ Après chaque suppression il faut vérifier les liens morts
 
 ### Dernières modifications d'un utilisateur
 
-### Supprimer des données en masse
+## Supprimer des données en masse
 
 :::danger
 
