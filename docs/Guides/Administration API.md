@@ -1,3 +1,7 @@
+---
+title: Administrer l'API
+---
+
 # Administrer l'API
 
 L'adminsitration de l'API GRLC se fait depuis le dépôt GitHub [movies-api](https://github.com/abes-esr/movies-api). Les requêtes du dépôt sont récupérées dynamiquement sur https://movies.abes.fr/api/.
