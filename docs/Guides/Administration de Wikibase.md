@@ -20,7 +20,7 @@ Ou depuis la page d'une entité :
 
 * https://movies.abes.fr/wiki/Special:AllPages?from=&to=&namespace=122
 
-## Fusioner des entités
+## Fusionner des entités
 
 * https://movies.abes.fr/wiki/Special:MergeItems
 
