@@ -76,7 +76,7 @@ const config = {
         title: '',
         logo: {
           alt: 'Logo Movies',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
           srcDark: 'img/logo_dark.png',
         },
         items: [
