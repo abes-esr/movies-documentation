@@ -5,7 +5,7 @@ tags:
 owl:
   "rdfs:label": "a pour bénéficiaire@fr"
   "rdf:type": "owl:ObjectProperty"
-  "rdfs:domain": "Contrat"
+  "rdfs:domain": "Contrat ; Habilitation transférée"
   "rdfs:range": "Organisation"
   "owl:cardinality": "O/R"
   "pq":
