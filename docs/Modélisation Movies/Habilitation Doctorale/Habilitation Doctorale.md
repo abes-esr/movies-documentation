@@ -75,9 +75,21 @@ graph LR
     HAB --> |a pour partenaire| ORG
 ```
 
+### Co-habilitation
 
-### Co accréditation
-
+```mermaid
+graph LR
+    ORG(Organisation) 
+    HAB{{habilitation doctorale}}
+    
+    ORG --- HAB
+    HAB -.->|début| xsd:date
+    HAB -.->|fin| xsd:date
+    HAB -.-> |preuve| PreuveHAB(Preuve)
+    HAB -.-> |source| SourceHAB(Data Provider)
+    HAB --> Co-habilitation(Co-habilitation)
+    HAB --> |a pour partenaire| ORG
+```
 
 
 ## Propriétés
