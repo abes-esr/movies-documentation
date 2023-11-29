@@ -1,5 +1,5 @@
 ---
-slug: /Ontologie/Classes/Habilitation
+slug: /Ontologie/Classes/Habilitation en propre
 description: ""
 tags:
   - compétence doctorale
