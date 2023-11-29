@@ -14,4 +14,4 @@ owl:
 
 ## Définition
 
-Désigne le délégataire d'une habilitation doctorale. Cette propriété permet de qualifier la propriété `habilitation doctorale`.
+Désigne le délégataire d'une habilitation doctorale.  La propriété `a pour délégataire` doit être utilisée en qualificatif de la propriété `habilitation doctorale`.
