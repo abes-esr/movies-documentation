@@ -7,7 +7,7 @@ owl:
   "rdf:type": "owl:DatatypeProperty"
   "rdfs:domain": "habilitation doctorale"
   "rdfs:range": "Organisation"
-  "owl:cardinality": "F/NR"
+  "owl:cardinality": "F/R"
 ---
 
 <OntologyTable frontMatter={frontMatter}/>
