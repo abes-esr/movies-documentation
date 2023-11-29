@@ -10,7 +10,6 @@ owl:
   "owl:cardinality": "O/R"
   "pq":
     - "début"
-    - "fin"
     - "preuve"
     - "source"
 ---
