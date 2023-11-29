@@ -114,3 +114,41 @@ Université Paris-Saclay (COMUE)
         </References>
     </Statement>
 </Claim>
+
+## Exemple : L'habilitation doctorale de Paris 11
+
+Université Paris-Sud (Paris 11)
+
+<Claim property="habilitation doctorale">
+    <Statement value="Habilitation en propre">
+        <Qualifier property="début">21 mars 1970</Qualifier>
+        <Qualifier property="fin">31 août 2014</Qualifier>
+        <Qualifier property="preuve">Arrêté du XXX</Qualifier>
+        <References>
+            <Reference>
+                <ReferenceElement property="source">STHE</ReferenceElement>
+            </Reference>
+        </References>
+    </Statement>
+    <Statement value="Habilitation déléguée">
+        <Qualifier property="début">1 septembre 2015</Qualifier>
+        <Qualifier property="fin">31 décembre 2019</Qualifier>
+        <Qualifier property="a pour délégataire">Université Paris-Saclay (ComUE)</Qualifier>
+        <Qualifier property="preuve">Arrêté du XXX</Qualifier>
+        <References>
+            <Reference>
+                <ReferenceElement property="source">STHE</ReferenceElement>
+            </Reference>
+        </References>
+    </Statement>
+    <Statement value="Habilitation transférée">
+        <Qualifier property="1 janvier 2020"></Qualifier>
+        <Qualifier property="a pour bénéficiaire">université Paris-Saclay (EPE)</Qualifier>
+        <Qualifier property="preuve">Arrêté du XXX</Qualifier>
+        <References>
+            <Reference>
+                <ReferenceElement property="source">STHE</ReferenceElement>
+            </Reference>
+        </References>
+    </Statement>
+</Claim>
