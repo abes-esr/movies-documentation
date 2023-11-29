@@ -19,4 +19,4 @@ owl:
 
 ## Définition
 
-Permet de désigner les bénéficiaires d'un contrat.
+Permet de désigner les bénéficiaires d'un contrat ou d'une habilitation transférée.
