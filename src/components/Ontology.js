@@ -33,6 +33,18 @@ const LinkClassOrProperty = (context, value) => {
   }
 }
 
+async function getPropertyId(label) {
+    const response = await fetch(`https://movies-test.abes.fr/w/api.php?action=wbsearchentities&search=${label}&language=fr&type=property&format=json`);
+    const json = await response.json();
+    return json["search"].shift()?.id
+}
+
+async function getItemId(label) {
+    const response = await fetch(`https://movies-test.abes.fr/w/api.php?action=wbsearchentities&search=${label}&language=fr&format=json`);
+    const json = await response.json();
+    return json["search"].shift()?.id
+}
+
 const FormatQualifier = (context, value) => {
   const format_contexts = ["pq"];
 
@@ -58,6 +70,9 @@ export const OntologyTable = ({ frontMatter }) => (
               {keys}
             </th>
           )
+          <th>
+            ID
+          </th>
         }
       </tr>
     </thead>
@@ -74,6 +89,11 @@ export const OntologyTable = ({ frontMatter }) => (
             </td>
           }
           )}
+        <td>
+          {
+            await getPropertyId(frontMatter["owl"]?["rdfs:label"]?.replace("@fr", "")) || await getItemId(frontMatter["owl"]?["rdfs:label"]?.replace("@fr", ""))
+          }
+        </td>
       </tr>
     </tbody>
   </table>
