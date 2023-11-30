@@ -69,11 +69,10 @@ export const OntologyTable = ({ frontMatter }) => (
             <th>
               {keys}
             </th>
-          )
-          <th>
-            ID
-          </th>
-        }
+          )}
+        <th>
+          ID
+        </th>
       </tr>
     </thead>
     <tbody>
