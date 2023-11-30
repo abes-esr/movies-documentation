@@ -16,7 +16,7 @@ Le réconciliateur est déjà configuré sur l'instance OpenRefine [refmovies](h
 
 :::
 
-Lorsqu'un réconciliateur est configuré il devient utilisable dans l'ensemble des projets de l'instance OpenRefine.
+Lorsqu'un réconciliateur est configuré il devient utilisable dans l'ensemble des projets de l'instance OpenRefine. Cependant il doit être sélectionné dans chaque projet dans lequel on souhaite l'utiliser.
 
 
 TODO TODO TODO
