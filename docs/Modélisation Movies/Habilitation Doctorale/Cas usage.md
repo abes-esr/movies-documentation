@@ -26,7 +26,7 @@ SELECT ?nom ?codeEtab WHERE {
 ```
 :::note
 
-https://movies.abes.fr/api/membres_reseau_these.csv
+https://movies.abes.fr/api/v1/membres_reseau_these.csv
 
 :::
 
@@ -55,11 +55,11 @@ SELECT ?etabLabel ?code_etab ?debut ?fin WHERE {
 
 Pour l'ensemble des établissements :
 
-https://movies.abes.fr/api/habilitations_doctorales.csv
+https://movies.abes.fr/api/v1/habilitations_doctorales.csv
 
 Ou pour un seul établissement (par code établissement) :
 
-https://movies.abes.fr/api/movies-api/habilitation_doctorale?codeEtab=PESC
+https://movies.abes.fr/api/v1/movies-api/habilitation_doctorale?codeEtab=PESC
 
 :::
 
@@ -85,7 +85,7 @@ SELECT ?etabLabel ?codeEtab ?debut WHERE {
 ```
 :::note
 
-https://movies.abes.fr/api/habilitations_doctorales_en_cours.csv
+https://movies.abes.fr/api/v1/habilitations_doctorales_en_cours.csv
 
 :::
 
@@ -111,7 +111,7 @@ SELECT ?etabLabel ?codeEtab ?debut ?fin WHERE {
 ```
 :::note
 
-https://movies.abes.fr/api/habilitations_doctorales_echues.csv
+https://movies.abes.fr/api/v1/habilitations_doctorales_echues.csv
 
 :::
 
@@ -139,7 +139,7 @@ SELECT DISTINCT ?orgLabel ?code_etablissement WHERE {
 ```
 :::note
 
-https://movies.abes.fr/api/ascendances_descendances_etab_these.csv?codeEtab=UPAS
+https://movies.abes.fr/api/v1/ascendances_descendances_etab_these.csv?codeEtab=UPAS
 
 :::
 
