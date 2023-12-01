@@ -1,6 +1,6 @@
 # Contrôle qualité (CQ)
 
-Cette section détail l'ensemble des requêtes de contrôle qualité. Dans l'[API de Movies](https://movies.abes.fr/api/) ces requêtes sont préfixées par `CQ`.
+Cette section détail l'ensemble des requêtes de contrôle qualité. Dans l'[API de Movies](https://movies.abes.fr/api/v1/) ces requêtes sont préfixées par `CQ`.
 
 ## Contrôle des dates
 
@@ -36,7 +36,7 @@ SELECT ?statement ?problem ?debut ?fin WHERE {
 La date de création d'une organisation doit être inférieure à sa date de suppression.
 Pour chaque statements, la valeur de l'attribut `début` doit être inférieure à la valeur de l'attribut `fin`.
 
-https://movies.abes.fr/api/CQ_inversion_debut_fin.csv
+https://movies.abes.fr/api/v1/CQ_inversion_debut_fin.csv
 
 :::
 
@@ -65,7 +65,7 @@ HAVING (?count > 1)
 
 Il ne peut y avoir qu'une seule date de création et de fermeture par établissement.
 
-https://movies.abes.fr/api/CQ_unicite_dates_creation_suppresion.csv
+https://movies.abes.fr/api/v1/CQ_unicite_dates_creation_suppresion.csv
 
 :::
 
@@ -113,7 +113,7 @@ La date de début d'habilitation doit être supérieure ou égal à la date de c
 
 ⚠️ Dans certains cas l'erreur retournée provient du niveau de précision de la date : certaines dates sont arrondies à l'année.
 
-https://movies.abes.fr/api/CQ_coherence_dates_habilitation.csv
+https://movies.abes.fr/api/v1/CQ_coherence_dates_habilitation.csv
 
 :::
 
@@ -169,7 +169,7 @@ HAVING (?count > 1)
 
 Un identifiant unique ne peut être attribué qu'une seule fois par entité.
 
-https://movies.abes.fr/api/CQ_unicite_identifiants_par_entite.csv
+https://movies.abes.fr/api/v1/CQ_unicite_identifiants_par_entite.csv
 
 :::
 
@@ -217,7 +217,7 @@ HAVING (?count > 1)
 
 Un identifiant unique ne peut être attribué que pour une seule entité.
 
-https://movies.abes.fr/api/CQ_unicite_identifiants
+https://movies.abes.fr/api/v1/CQ_unicite_identifiants
 
 :::
 
@@ -252,7 +252,7 @@ SELECT ?predecesseur ?predecesseurLabel ?predicat ?successeur ?successeurLabel W
 
 Si la propriété [a pour prédeccesseur](/Ontologie/Propriétés/a pour prédécesseur) est déclarée dans une entité, alors la propriété inverse [a pour successeur]("/Ontologie/Propriétés/a pour successeur") doit aussi être déclarée dans l'entité cible.
 
-https://movies.abes.fr/api/CQ_successions_manquantes.csv
+https://movies.abes.fr/api/v1/CQ_successions_manquantes.csv
 
 :::
 
@@ -283,7 +283,7 @@ SELECT ?source ?target WHERE {
 
 Un établissement ne peut pas être le précesseur ou le successeur de lui même et ce à n'importe quel degré.
 
-https://movies.abes.fr/api/CQ_successions_circulaires.csv
+https://movies.abes.fr/api/v1/CQ_successions_circulaires.csv
 
 :::
 
