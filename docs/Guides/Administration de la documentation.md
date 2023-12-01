@@ -9,9 +9,19 @@ L'ensemble des modifications réaliées sur la branche [main](https://github.com
 
 Dans la mesure du possible les modifications ne doivent pas être réalisées directement sur la branche main mais sur la branche develop. Pour publier une nouvelle version il faut fusionner la branche develop dans main.
 
-## Ajouter une nouvelle classe ou propriété
+## Documenter une nouvelle classe ou propriété
 
+Pour documenter une nouvelle propriété ou classe il faut créer un nouveau fichier markdown (.md) dans le dossier [/docs/Ontologie/Propriétés](/docs/Ontologie/Propriétés) ou bien dans le dossier [/docs/Ontologie/Classes](/docs/Ontologie/Classes). 
 
+Il est possible de s'aider du modèle suivant [/docs/Ontologie/Propriétés/_modele.md](docs/Ontologie/Propriétés/_modele.md) pour créer le fichier markdown.
+
+:::caution
+
+Les classes et propriétés doivent aussi être crées dans Wikibase
+
+:::
+
+La saisie des métadonnées OWL est purement déclarative. Aucun contrôle n'est réalisé dans Wikibase.
 
 ## Ressources
 
