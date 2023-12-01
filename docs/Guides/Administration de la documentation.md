@@ -7,6 +7,8 @@ L'ensemble de la documentation est enregistrée dans le répertoire [`/doc`](htt
 L'ensemble des modifications réaliées sur la branche [develop](https://github.com/abes-esr/movies-documentation/tree/develop) sont automatiquement poussées sur l'interface de test : https://movies-test.abes.fr/doc
 L'ensemble des modifications réaliées sur la branche [main](https://github.com/abes-esr/movies-documentation/tree/main) sont automatiquement poussées sur l'interface de production : https://movies.abes.fr/doc
 
+La mise à jour du site web de la documentation peut prendre plusieurs minutes.
+
 Dans la mesure du possible les modifications ne doivent pas être réalisées directement sur la branche main mais sur la branche develop. Pour publier une nouvelle version il faut fusionner la branche develop dans main.
 
 ## Documenter une nouvelle classe ou propriété
@@ -17,11 +19,11 @@ Il est possible de s'aider du modèle suivant [/docs/Ontologie/Propriétés/_mod
 
 :::caution
 
-Les classes et propriétés doivent aussi être crées dans Wikibase
+Les classes et propriétés doivent aussi être crées dans Wikibase. La saisie des métadonnées OWL est purement déclarative, aucun contrôle de validité n'est réalisé dans Wikibase.
 
 :::
 
-La saisie des métadonnées OWL est purement déclarative. Aucun contrôle n'est réalisé dans Wikibase.
+
 
 ## Ressources
 
