@@ -4,7 +4,7 @@ title: Administration de l'API
 
 # Administration de l'API
 
-L'adminsitration de l'API GRLC se fait depuis le dépôt GitHub [movies-api](https://github.com/abes-esr/movies-api). Les requêtes du dépôt sont récupérées dynamiquement sur https://movies.abes.fr/api/.
+L'adminsitration de l'API GRLC se fait depuis le dépôt GitHub [movies-api](https://github.com/abes-esr/movies-api). Les requêtes du dépôt sont récupérées dynamiquement sur https://movies.abes.fr/api/v1/.
 
 Dans le dépôt, chaque fichier de requête (fichier `.rq`) se divise en deux parties :
 
@@ -43,7 +43,7 @@ SELECT ?etabLabel ?debut ?fin WHERE {
 
 Le nom du fichier contenant la requête sert à générer le chemin de l'URL de la requête. Par exemple :
 
-Le fichier CQ_coherence_dates_habilitation.rq générera la requête suivante : https://movies.abes.fr/api/CQ_coherence_dates_habilitation.
+Le fichier CQ_coherence_dates_habilitation.rq générera la requête suivante : https://movies.abes.fr/api/v1/CQ_coherence_dates_habilitation.
 
 Chaque requête est préfixée pour faciliter leur identifification et les grouper dans la documentation Open API de Movies :
 
@@ -55,11 +55,11 @@ Chaque requête est préfixée pour faciliter leur identifification et les group
 
 L'API permet de récupérer les données aux formats TTL, JSON ou CSV. Pour récupérer tel ou tel format il suffit de suffixer la requête avec `.ttl`, `.json` ou `.csv`. Le nom du format doit être placé avant les paramètre de la requête.
 
-Par exemple : [https://movies.abes.fr/api/CQ_coherence_dates_habilitation.csv permet de récupérer les données au format CSV ; https://movies.abes.fr/api/TH_habilitation_doctorale.csv?codeEtab=UPAS permet de récupérer les données au format JSON.
+Par exemple : [https://movies.abes.fr/api/v1/CQ_coherence_dates_habilitation.csv permet de récupérer les données au format CSV ; https://movies.abes.fr/api/v1/TH_habilitation_doctorale.csv?codeEtab=UPAS permet de récupérer les données au format JSON.
 
 ## Paramètres des requêtes
 
- Les variables de la requête qui commencent par `?_` sont transformés automatiquement en paramètre de l'ULR. La requête ci-dessous permet d'avoir une URL avec la structure suivante : https://movies.abes.fr/api/TH_habilitation_doctorale.csv?codeEtab=UPAS. Au moment de l'exécution de la requête `?_codeEtab` est automatiquement substitué par la valeur passée en argument de la requête : `UPAS`.
+ Les variables de la requête qui commencent par `?_` sont transformés automatiquement en paramètre de l'ULR. La requête ci-dessous permet d'avoir une URL avec la structure suivante : https://movies.abes.fr/api/v1/TH_habilitation_doctorale.csv?codeEtab=UPAS. Au moment de l'exécution de la requête `?_codeEtab` est automatiquement substitué par la valeur passée en argument de la requête : `UPAS`.
 
  Il est possible de spécifier plusieurs arguments pour une requête.
 
