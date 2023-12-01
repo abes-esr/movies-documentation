@@ -43,4 +43,4 @@ owl:
 >
 > Les décrets sont publiés au Journal Officiel. Lorsque des procédures exigées par les textes (signature d’un décret pris en Conseil des ministres par le chef de l’État, par exemple) ne sont pas respectées, le décret peut être annulé par le Conseil d’État.
 >
-> (<https://www.vie-publique.fr/fiches/20263-quest-ce-quun-decret>)
+> [https://www.vie-publique.fr/fiches/20263-quest-ce-quun-decret](<https://www.vie-publique.fr/fiches/20263-quest-ce-quun-decret>)

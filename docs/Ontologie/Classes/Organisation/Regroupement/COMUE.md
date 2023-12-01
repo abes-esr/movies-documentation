@@ -8,4 +8,4 @@ slug: /Ontologie/Classes/COMUE
 >
 > La communauté d'universités et établissements assure la coordination des politiques de ses membres telle que prévue à l'article L. 718-2.
 >
-> (<https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027739695/2013-07-24>)
+> [https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027739695/2013-07-24](<https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027739695/2013-07-24>)
