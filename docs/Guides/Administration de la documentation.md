@@ -2,7 +2,7 @@
 
 La documentation est administrée depuis le dépôt GitHub [movies-documentation](https://github.com/abes-esr/movies-documentation).
 
-L'ensemble de la documentation est enregistrée dans le répertoire `[/doc](https://github.com/abes-esr/movies-documentation/tree/develop/docs)`. Pour pouvoir éditer la documentation il est nécessaire de disposer d'un compte GitHub et des droits en écriture sur le dépôt.
+L'ensemble de la documentation est enregistrée dans le répertoire [`/doc`](https://github.com/abes-esr/movies-documentation/tree/develop/docs). Pour pouvoir éditer la documentation il est nécessaire de disposer d'un compte GitHub et des droits en écriture sur le dépôt.
 
 L'ensemble des modifications réaliées sur la branche [develop](https://github.com/abes-esr/movies-documentation/tree/develop) sont automatiquement poussées sur l'interface de test : https://movies-test.abes.fr/doc
 L'ensemble des modifications réaliées sur la branche [main](https://github.com/abes-esr/movies-documentation/tree/main) sont automatiquement poussées sur l'interface de production : https://movies.abes.fr/doc
