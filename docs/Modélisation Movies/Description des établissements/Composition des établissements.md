@@ -18,7 +18,7 @@ graph LR
     ORG --- MBR --> ORG 
     MBR -..-> |source| xsd:string
     MBR -..-> |preuve| P
-    MBR -..->|type appartenance| TA
+    MBR -..->|type| TA
 ```
 
 ```mermaid
@@ -31,7 +31,7 @@ graph LR
     ORG --- MBR --> ORG 
     MBR -..-> |source| xsd:string
     MBR -..-> |preuve| P
-    MBR -..->|type appartenance| TA
+    MBR -..->|type| TA
 ```
 
 ## Propriétés
