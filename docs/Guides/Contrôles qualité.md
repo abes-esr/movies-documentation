@@ -117,6 +117,38 @@ https://movies.abes.fr/api/v1/CQ_coherence_dates_habilitation.csv
 
 :::
 
+## Contrôle de la cohérence des habilitations
+
+### Absence d'habilitation transférée
+
+```sparql
+PREFIX wdt: <https://movies.abes.fr/prop/direct/>
+PREFIX wd: <https://movies.abes.fr/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <https://movies.abes.fr/prop/>
+PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
+
+
+SELECT * WHERE {
+   ?org wdt:P3 ?code_etablissement;
+        wdt:P11 ?date_suppression;                    # établissement disparu
+        wdt:P6 <https://movies.abes.fr/entity/Q8>.    # établissement ayant été habilité au moins une fois
+  
+   # absence de transfert
+   FILTER NOT EXISTS {
+     ?org  wdt:P6 <https://movies.abes.fr/entity/Q>  # classes de l'habilitation transférée
+   }
+}
+```
+
+:::note
+
+Lorsqu'un établissement a été habilité et qu'il disparait il faut explicitement saisir un transfert d'habilitation
+
+:::
+
+
 ## Contrôle des identifiants
 
 ### Unicité des identifiants
