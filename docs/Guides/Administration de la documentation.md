@@ -25,7 +25,6 @@ Les classes et propriétés doivent aussi être créées dans Wikibase. La saisi
 
 :::
 
-
 ## Ajouter une page à l'index thématique
 
 Pour rajouter une page à l'[index thématique](/doc/tags) de la documentation Movies, il faut rajouter les métadonnées tags dans l'entête du fichier :
@@ -43,6 +42,17 @@ tags:
 L'entête du fichier est écrit en YAML, attention à l'indentation de chaque tag.
 
 :::
+
+## Vérifier les erreurs de publication
+
+Si les modifications ne sont pas visibles sur https://movies.abes.fr/doc :
+
+* Assurez-vous que vous avez bien modifié la bonne branche
+* Vérifiez que la [GitHub action chargée de publier automatiquement la documentation](https://github.com/abes-esr/movies-documentation/actions/workflows/build-pubtodockerhub.yml) n'est pas en erreur. ②\
+ ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/3d79a596-ac58-4602-b022-6238fd3af882)\
+En cas d'erreur vous pouvez consulter les logs pour avoir plus d'information. ①\
+![image](https://github.com/abes-esr/movies-documentation/assets/60341438/4aac85a5-ed77-41a2-b6a0-0b9cca3f7c63) \
+
 
 ## Ressources
 
