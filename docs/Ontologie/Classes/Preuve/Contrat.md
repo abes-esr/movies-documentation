@@ -22,4 +22,4 @@ owl:
 >
 > On distingue le contrat privé (conclu entre au moins deux personnes privées) et le contrat administratif (conclu par l’administration, tel que les marchés publics).
 >
-> (<https://www.vie-publique.fr/fiches/276037-quest-ce-quun-contrat>)
+> ([https://www.vie-publique.fr/fiches/276037-quest-ce-quun-contrat](<https://www.vie-publique.fr/fiches/276037-quest-ce-quun-contrat>))
