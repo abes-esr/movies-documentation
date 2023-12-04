@@ -5,6 +5,7 @@ tags:
 owl:
   "rdfs:label": "Habilitation déléguée"
   "rdf:type": "owl:Class"
+  "rdfs:subClassOf": "Habilitation"
 ---
 
 <OntologyTable frontMatter={frontMatter}/>
