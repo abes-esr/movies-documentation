@@ -51,8 +51,7 @@ Si les modifications ne sont pas visibles sur https://movies.abes.fr/doc :
 * Vérifiez que la [GitHub action chargée de publier automatiquement la documentation](https://github.com/abes-esr/movies-documentation/actions/workflows/build-pubtodockerhub.yml) n'est pas en erreur. ②\
  ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/3d79a596-ac58-4602-b022-6238fd3af882)\
 En cas d'erreur vous pouvez consulter les logs pour avoir plus d'information. ①\
-![image](https://github.com/abes-esr/movies-documentation/assets/60341438/4aac85a5-ed77-41a2-b6a0-0b9cca3f7c63) \
-
+![image](https://github.com/abes-esr/movies-documentation/assets/60341438/4aac85a5-ed77-41a2-b6a0-0b9cca3f7c63)
 
 ## Ressources
 
