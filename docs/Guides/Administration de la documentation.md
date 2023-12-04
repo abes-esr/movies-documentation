@@ -24,6 +24,23 @@ Les classes et propriétés doivent aussi être crées dans Wikibase. La saisie 
 :::
 
 
+## Ajouter une page à l'indexe thématique
+
+Pour rajouter une page à l'[indexe thématique](/doc/tags) de la documentation Movies, il faut rajouter les métadonnées tags dans l'entête du fichier :
+
+```md
+---
+tags:
+  - tag 1
+  - tag 2
+---
+```
+
+:::warning
+
+L'entête du fichier est écrit en YAML, attention à l'indentation de chaque tag.
+
+:::
 
 ## Ressources
 
