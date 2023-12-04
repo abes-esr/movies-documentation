@@ -1,8 +1,10 @@
 ---
-slug: /Ontologie/Classes/Habilitation déléguée
 description: ""
 tags:
-  - compétence doctorale
+  - "compétence doctorale"
+owl:
+  "rdfs:label": "Habilitation déléguée"
+  "rdf:type": "owl:Class"
 ---
 
 ## Définition
