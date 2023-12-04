@@ -10,3 +10,5 @@ owl:
 <OntologyTable frontMatter={frontMatter}/>
 
 ## Définition
+
+Représente une habilitation déléguée par un établissement à un autre, par exemple en cas de regroupement dans une COMUE ou un EPE.
