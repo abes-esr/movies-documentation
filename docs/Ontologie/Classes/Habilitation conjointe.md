@@ -1,8 +1,10 @@
 ---
-slug: /Ontologie/Classes/Habilitation conjointe
 description: ""
 tags:
-  - compétence doctorale
+  - "compétence doctorale"
+owl:
+  "rdfs:label": "Habilitation conjointe"
+  "rdf:type": "owl:Class"
 ---
 
 ## Définition
