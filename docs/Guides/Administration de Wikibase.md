@@ -4,7 +4,7 @@ L'administration de Wikibase est réalisée principalement depuis la page ["Page
 
 ## Gestion des comptes / Authentification
 
-**La gestion des compte ne doit pas être faite depuis l'interface Wikibase.** La gestion des comptes est assurée par LDAP. Les comptes BOT qui disposent de droits spécifiques pour intervenir sur de grosses volumétries sont créés automatiquement au lancement du serveur Movies.
+**La gestion des comptes ne doit pas être faite depuis l'interface Wikibase.** La gestion des comptes est assurée par LDAP. Les comptes BOT qui disposent de droits spécifiques pour intervenir sur de grosses volumétries sont créés automatiquement au lancement du serveur Movies.
 
 ## Lister l'ensemble des entités
 
@@ -59,7 +59,7 @@ Après chaque suppression il faut vérifier les liens morts
 
 :::
 
-## Indentifier les liens morts
+## Identifier les liens morts
 
 * https://movies.abes.fr/wiki/Special:BrokenRedirects
 * https://movies.abes.fr/wiki/Special:DeadendPages
@@ -72,7 +72,7 @@ Après chaque suppression il faut vérifier les liens morts
 
 ### Lister toutes les contributions d'un autre compte
 
-Cette page nécessite les droits administrateur
+Cette page nécessite les droits administrateurs
 
 * https://movies.abes.fr/wiki/Special:Contributions
 
