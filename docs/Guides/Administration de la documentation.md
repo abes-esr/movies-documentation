@@ -19,7 +19,7 @@ Il est possible de s'aider du modèle suivant [/docs/Ontologie/Propriétés/_mod
 
 :::caution
 
-Les classes et propriétés doivent aussi être crées dans Wikibase. La saisie des métadonnées OWL est purement déclarative, aucun contrôle de validité n'est réalisé dans Wikibase.
+Les classes et propriétés doivent aussi être créées dans Wikibase. La saisie des métadonnées OWL est purement déclarative, aucun contrôle de validité n'est réalisé dans Wikibase.
 
 :::
 
