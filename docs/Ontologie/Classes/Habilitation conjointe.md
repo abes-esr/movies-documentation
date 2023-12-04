@@ -7,4 +7,6 @@ owl:
   "rdf:type": "owl:Class"
 ---
 
+<OntologyTable frontMatter={frontMatter}/>
+
 ## Définition
