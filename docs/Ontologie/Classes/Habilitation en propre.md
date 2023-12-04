@@ -1,8 +1,12 @@
 ---
-slug: /Ontologie/Classes/Habilitation en propre
 description: ""
 tags:
-  - compétence doctorale
+  - "compétence doctorale"
+owl:
+  "rdfs:label": "Habilitation en propre"
+  "rdf:type": "owl:Class"
 ---
+
+<OntologyTable frontMatter={frontMatter}/>
 
 ## Définition
