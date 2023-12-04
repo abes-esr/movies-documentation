@@ -130,16 +130,18 @@ PREFIX p: <https://movies.abes.fr/prop/>
 PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
 
 
-SELECT * WHERE {
+SELECT ?org ?code_etablissement ?date_suppression ?erreur WHERE {
    ?org wdt:P3 ?code_etablissement;
         wdt:P11 ?date_suppression;                    # établissement disparu
         wdt:P6 <https://movies.abes.fr/entity/Q8>.    # établissement ayant été habilité au moins une fois
   
    # absence de transfert
    FILTER NOT EXISTS {
-     ?org  wdt:P6 <https://movies.abes.fr/entity/Q>  # classes de l'habilitation transférée
+     ?org  wdt:P6 <https://movies.abes.fr/entity/Q> # classes de l'habilitation transférée
    }
-}
+  
+  BIND("Rajoutez un transfert d'habilitation dont la date correspond à celle de suppression de l'établissement" AS ?erreur)
+} 
 ```
 
 :::note
