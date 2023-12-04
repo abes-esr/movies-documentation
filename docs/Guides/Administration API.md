@@ -45,7 +45,7 @@ Le nom du fichier contenant la requête sert à générer le chemin de l'URL de 
 
 Le fichier CQ_coherence_dates_habilitation.rq générera la requête suivante : https://movies.abes.fr/api/v1/CQ_coherence_dates_habilitation.
 
-Chaque requête est préfixée pour faciliter leur identifification et les grouper dans la documentation Open API de Movies :
+Toutes les requêtes sont préfixées pour faciliter leur identifification et permettre de les regrouper dans la documentation Open API de Movies :
 
 * Les requêtes qui concernent le contrôle qualité doivent être préfixées avec `CQ_`
 * Les requêtes qui concernent le service des thèses doivent être préfixées avec `TH_`
@@ -55,7 +55,7 @@ Chaque requête est préfixée pour faciliter leur identifification et les group
 
 L'API permet de récupérer les données aux formats TTL, JSON ou CSV. Pour récupérer tel ou tel format il suffit de suffixer la requête avec `.ttl`, `.json` ou `.csv`. Le nom du format doit être placé avant les paramètre de la requête.
 
-Par exemple : [https://movies.abes.fr/api/v1/CQ_coherence_dates_habilitation.csv permet de récupérer les données au format CSV ; https://movies.abes.fr/api/v1/TH_habilitation_doctorale.csv?codeEtab=UPAS permet de récupérer les données au format JSON.
+Par exemple : https://movies.abes.fr/api/v1/CQ_coherence_dates_habilitation.csv permet de récupérer les données au format CSV ; https://movies.abes.fr/api/v1/TH_habilitation_doctorale.csv?codeEtab=UPAS permet de récupérer les données au format JSON.
 
 ## Paramètres des requêtes
 
