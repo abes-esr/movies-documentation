@@ -8,7 +8,7 @@ L'adminsitration de l'API GRLC se fait depuis le dépôt GitHub [movies-api](htt
 
 Dans le dépôt, chaque fichier de requête (fichier `.rq`) se divise en deux parties :
 
-1. Une entête qui contient les métadonnées nécessaires au fonctionnement de GRLC et qui permettent de générer la documentation Open API ([Liste des métadonnées utilisables](https://github.com/CLARIAH/grlc#decorator-syntax)).
+1. Une entête qui contient les métadonnées nécessaires au fonctionnement de GRLC. Les métadonnées permettent de générer la documentation Open API ([Liste des métadonnées utilisables](https://github.com/CLARIAH/grlc#decorator-syntax)).
 2. Le corps de la requête.
 
 Par exemple : 
