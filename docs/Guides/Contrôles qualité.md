@@ -1,6 +1,6 @@
 # Contrôle qualité (CQ)
 
-Cette section détail l'ensemble des requêtes de contrôle qualité. Dans l'[API de Movies](https://movies.abes.fr/api/v1/) ces requêtes sont préfixées par `CQ`.
+Cette section détaille l'ensemble des requêtes de contrôle qualité. Dans l'[API de Movies](https://movies.abes.fr/api/v1/) ces requêtes sont préfixées par `CQ`.
 
 ## Contrôle des dates
 
