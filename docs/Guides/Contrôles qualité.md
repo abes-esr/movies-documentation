@@ -146,7 +146,7 @@ SELECT ?org ?code_etablissement ?date_suppression ?erreur WHERE {
 
 :::note
 
-Lorsqu'un établissement a été habilité et qu'il disparait il faut explicitement saisir un transfert d'habilitation
+Lorsqu'un établissement a été habilité et qu'il disparait il faut explicitement saisir un transfert d'habilitation vers un ou plusieur établissement.
 
 :::
 
