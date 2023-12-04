@@ -38,7 +38,7 @@ Dans un projet OpenRefine la réconciliation des données est réalisée colonne
 
 ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/dd9181be-a458-406d-b751-2e3e220bf8e3)
 
-Depuis l'entête de la colonne colonne à réconcilier ⓵ il faut sélectionner l'action : `Réconcilier` ⓶ > `Démarer la réconciliation`.⓷
+Depuis l'entête de la colonne colonne à réconcilier ⓵ il faut sélectionner l'action : `Réconcilier` ⓶ > `Démarrer la réconciliation`.⓷
 
 ## Configurer la réconciliation
 
@@ -50,10 +50,10 @@ Il faut ensuite choisir le service de réconciliation à utiliser. Pour Movies c
 
 Il est ensuite possible de configurer la réconciliation en choisissant :
 
-* le type d'entité à utiliser pour réconcilier le contenu de chaque cellule de la colonne (optionel).⓵  Par exemple restreindre l'alignement sur des entités de type `Organisation`. 
+* le type d'entité à utiliser pour réconcilier le contenu de chaque cellule de la colonne (optionnel).⓵  Par exemple restreindre l'alignement sur des entités de type `Organisation`. 
 * le nombre maximum de candidats (optionnel).⓶
 
-Cliquer sur `Démarer la réconciliation` permet de lancer le processus de réconciliation. ⓷
+Cliquer sur `Démarrer la réconciliation` permet de lancer le processus de réconciliation. ⓷
 
 ## Evaluer les candidats
 
@@ -91,7 +91,7 @@ Les valeurs des déclarations et des termes peuvent être saisies manuellement o
 
 L'interface de saisie des données se divise en trois parties :
 
-* La section de gestion des schéma (OpenRefine permet de créer de sauvgarder et charger des schémas) ⓵
+* La section de gestion des schéma (OpenRefine permet de créer de sauvegarder et charger des schémas) ⓵
 * La section de gestion des colonnes (les colonnes soulignées en verts correspondent aux colonnes alignées). Les colonnes peuvent être glissées dans la section de création d'entité. ⓶
 * La section de création d'entité ⓷
 
@@ -109,7 +109,7 @@ La section de création d'entité permet de réaliser les actions suivantes
 
 ## Identifier les erreurs et prévisualiser les modifications
 
-Avant d'importer les données il est possible de repérer certaines erreurs grâce à l'onglet `Problèmes` ⓵ et de prévisualiser les modifications grâce à l'onget `Prévisualisation` ⓶
+Avant d'importer les données il est possible de repérer certaines erreurs grâce à l'onglet `Problèmes` ⓵ et de prévisualiser les modifications grâce à l'onglet `Prévisualisation` ⓶
 
 ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/ffcc0f62-a542-4d17-aa38-d6883fd82c7a)
 
@@ -119,7 +119,7 @@ Une fois les données alignées et le schéma créé il est possible d'exporter 
 
 ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/223475fa-ad84-4409-95e5-f5c69fd02fb9)
 
-La fenêtre qui s'ouvre permet de saisir un message de commit ⓵ et de publier les modification ⓶. Si l'utilisateur n'est pas déjà authentifier un pop up s'ouvre pour demander l'authentification de l'utilisateur.
+La fenêtre qui s'ouvre permet de saisir un message de commit ⓵ et de publier les modification ⓶. Si l'utilisateur n'est pas déjà authentifié un pop-up s'ouvre pour demander l'authentification de l'utilisateur.
 
 Avant de publier les modifications il faut vérifier que l'instance Wikibase est bien la bonne.
 
