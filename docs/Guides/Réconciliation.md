@@ -1,5 +1,7 @@
 ---
 title: Réconcilier et exporter des données dans Wikibase
+tags:
+  - OpenRefine
 ---
 
 # Réconcilier et exporter des données dans Wikibase
