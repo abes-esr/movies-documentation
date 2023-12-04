@@ -4,11 +4,11 @@ title: Administration de l'API
 
 # Administration de l'API
 
-L'adminsitration de l'API GRLC se fait depuis le dépôt GitHub [movies-api](https://github.com/abes-esr/movies-api). Les requêtes du dépôt sont récupérées dynamiquement sur https://movies.abes.fr/api/v1/.
+L'administration de l'API GRLC se fait depuis le dépôt GitHub [movies-api](https://github.com/abes-esr/movies-api). Les requêtes du dépôt sont récupérées dynamiquement sur https://movies.abes.fr/api/v1/.
 
 Dans le dépôt, chaque fichier de requête (fichier `.rq`) se divise en deux parties :
 
-1. Une entête qui contient les métadonnées nécessaires au fonctionnement de GRLC. Les métadonnées permettent de générer la documentation Open API ([Liste des métadonnées utilisables](https://github.com/CLARIAH/grlc#decorator-syntax)).
+1. Un entête qui contient les métadonnées nécessaires au fonctionnement de GRLC. Les métadonnées permettent de générer la documentation Open API ([Liste des métadonnées utilisables](https://github.com/CLARIAH/grlc#decorator-syntax)).
 2. Le corps de la requête.
 
 Par exemple : 
