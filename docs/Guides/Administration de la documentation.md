@@ -2,12 +2,12 @@
 
 La documentation est administrée depuis le dépôt GitHub [movies-documentation](https://github.com/abes-esr/movies-documentation).
 
-L'ensemble de la documentation est enregistrée dans le répertoire [`/doc`](https://github.com/abes-esr/movies-documentation/tree/develop/docs). Pour pouvoir éditer la documentation il est nécessaire de disposer d'un compte GitHub et des droits en écriture sur le dépôt.
+La documentation est enregistrée dans le répertoire [`/doc`](https://github.com/abes-esr/movies-documentation/tree/develop/docs). Pour pouvoir éditer la documentation il est nécessaire de disposer d'un compte GitHub et des droits en écriture sur le dépôt.
 
 ## Gestion des branches GitHub
 
-L'ensemble des modifications réaliées sur la branche [develop](https://github.com/abes-esr/movies-documentation/tree/develop) sont automatiquement poussées sur l'interface de test : https://movies-test.abes.fr/doc
-L'ensemble des modifications réaliées sur la branche [main](https://github.com/abes-esr/movies-documentation/tree/main) sont automatiquement poussées sur l'interface de production : https://movies.abes.fr/doc
+L'ensemble des modifications réalisées sur la branche [develop](https://github.com/abes-esr/movies-documentation/tree/develop) sont automatiquement poussées sur l'interface de test : https://movies-test.abes.fr/doc
+L'ensemble des modifications réalisées sur la branche [main](https://github.com/abes-esr/movies-documentation/tree/main) sont automatiquement poussées sur l'interface de production : https://movies.abes.fr/doc
 
 La mise à jour du site web de la documentation peut prendre plusieurs minutes.
 
@@ -26,9 +26,9 @@ Les classes et propriétés doivent aussi être créées dans Wikibase. La saisi
 :::
 
 
-## Ajouter une page à l'indexe thématique
+## Ajouter une page à l'index thématique
 
-Pour rajouter une page à l'[indexe thématique](/doc/tags) de la documentation Movies, il faut rajouter les métadonnées tags dans l'entête du fichier :
+Pour rajouter une page à l'[index thématique](/doc/tags) de la documentation Movies, il faut rajouter les métadonnées tags dans l'entête du fichier :
 
 ```md
 ---
