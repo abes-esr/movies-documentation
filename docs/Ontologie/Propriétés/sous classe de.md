@@ -1,11 +1,10 @@
 ---
-description: ""
 owl:
   "rdfs:label": "sous classe de@fr"
   "rdf:type": "owl:ObjectProperty"
   "rdfs:domain": null
   "rdfs:range": null
-  "owl:cardinality": "F/NR"
+  "owl:cardinality": "F/R"
   "pq": null
 ---
 
