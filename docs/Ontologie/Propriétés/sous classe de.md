@@ -1,4 +1,6 @@
 ---
+tags:
+  - ontologie
 description: ""
 owl:
   rdfs:label: sous classe de@fr
