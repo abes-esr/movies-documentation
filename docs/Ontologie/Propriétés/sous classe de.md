@@ -1,8 +1,14 @@
 ---
+description: ""
+tags:
+  - source
 owl:
-  "rdfs:label": "sous classe de@fr"
-  "rdf:type": "owl:ObjectProperty"
+  "rdfs:label": "source@fr"
+  "rdf:type": null
+  "rdfs:domain": null
+  "rdfs:range": "Date Provider"
   "owl:cardinality": "F/R"
+  "pq": null
 ---
 
 <OntologyTable frontMatter={frontMatter}/>
