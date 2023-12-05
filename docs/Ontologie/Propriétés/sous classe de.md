@@ -1,13 +1,11 @@
 ---
 description: ""
-tags:
-  - source
 owl:
   "rdfs:label": "sous classe de@fr"
   "rdf:type": "owl:ObjectProperty"
   "rdfs:domain": null
   "rdfs:range": null
-  "owl:cardinality": "F/R"
+  "owl:cardinality": "F/NR"
   "pq": null
 ---
 
