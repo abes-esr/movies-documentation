@@ -1,21 +1,18 @@
----
-description: ""
-tags:
-  - contrats
-owl:
-  "rdfs:label": "a pour bénéficiaire@fr"
-  "rdf:type": "owl:ObjectProperty"
-  "rdfs:domain": "Contrat ; Habilitation transférée"
-  "rdfs:range": "Organisation"
-  "owl:cardinality": "O/R"
-  "pq":
-    - "début"
-    - "preuve"
-    - "source"
----
+  ---
+  description: ""
+  tags:
+    - source
+  owl:
+    "rdfs:label": "sous classe de@fr"
+    "rdf:type": null
+    "rdfs:domain": null
+    "rdfs:range": null
+    "owl:cardinality": "F/R"
+    "pq": null
+  ---
 
-<OntologyTable frontMatter={frontMatter}/>
+  <OntologyTable frontMatter={frontMatter}/>
 
-## Définition
+  ## Définition
 
-Cette propriété est l'équivalent de rdfs:subClassOf.
+  Cette propriété est équivalente à rdfs:subClassOf.
