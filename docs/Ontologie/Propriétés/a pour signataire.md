@@ -1,4 +1,6 @@
 ---
+tags:
+  - contrats
 owl:
   "rdfs:label": "a pour signataire@fr"
   "rdf:type": "owl:ObjectProperty"
