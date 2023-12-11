@@ -1,8 +1,8 @@
 ---
 owl:
-  "rdfs:label": "Campus"
+  "rdfs:label": "Équipe de recherche"
   "rdf:type": "owl:Class"
-  "rdfs:subClassOf": "Organisation"
+  "rdfs:subClassOf": "Collectivité"
 ---
 
 <OntologyTable frontMatter={frontMatter}/>
