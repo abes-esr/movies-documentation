@@ -22,6 +22,10 @@ const LinkClassOrProperty = (context, value) => {
   const linking_contexts = ["rdfs:domain", "rdfs:range", "pq", "rdfs:subClassOf"];
   const allowed_prefix = ["mov", null];
 
+  if (!value) {
+    return value
+  }
+
   if (linking_contexts.includes(context) && allowed_prefix.includes(GetPrefix(value))) {
     if (IsCapitalized(value)) {
       return <a href={"/doc/Ontologie/Classes/" + value }>{value}</a>
