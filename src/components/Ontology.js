@@ -77,7 +77,8 @@ export const OntologyTable = ({ frontMatter }) => (
                 }
               </td>
             } else {
-              return <td></td>
+              return <td>
+              </td>
             }
           }
           )}

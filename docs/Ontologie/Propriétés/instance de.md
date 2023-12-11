@@ -4,11 +4,11 @@ tags:
 - source
 owl:
 "rdfs:label": "instance de@fr"
-"rdf:type": null
-"rdfs:domain": null
-"rdfs:range": null
+"rdf:type": ""
+"rdfs:domain": ""
+"rdfs:range": ""
 "owl:cardinality": "F/R"
-"pq": null
+"pq": ""
 ---
 
 <OntologyTable frontMatter={frontMatter}/>
