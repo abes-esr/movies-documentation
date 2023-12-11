@@ -5,8 +5,8 @@ tags:
 owl:
   "rdfs:label": "est membre de@fr"
   "rdf:type": "owl:ObjectProperty"
-  "rdfs:domain": "Organisation"
-  "rdfs:range": "Organisation"
+  "rdfs:domain": "Collectivité"
+  "rdfs:range": "Collectivité"
   "owl:cardinality": "F/R"
   "pq":
     - "début"
@@ -19,7 +19,7 @@ owl:
 
 ## Définition
 
-Permet de définir l'appartenance d'une [Organisation](../Classes/Organisation/Organisation.md) à une autre.
+Permet de définir l'appartenance d'une [Collectivité](../Classes/Collectivité/collectivité.md) à une autre.
 
 :::tip
 
