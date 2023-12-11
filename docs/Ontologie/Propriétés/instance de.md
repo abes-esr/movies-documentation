@@ -3,12 +3,12 @@ description: ""
 tags:
 - source
 owl:
-"rdfs:label": "instance de@fr"
-"rdf:type": ""
-"rdfs:domain": ""
-"rdfs:range": ""
-"owl:cardinality": "F/R"
-"pq": ""
+  "rdfs:label": "instance de@fr"
+  "rdf:type": null 
+  "rdfs:domain": null 
+  "rdfs:range": null 
+  "owl:cardinality": "F/R"
+  "pq": null
 ---
 
 <OntologyTable frontMatter={frontMatter}/>
