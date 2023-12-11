@@ -68,13 +68,17 @@ export const OntologyTable = ({ frontMatter }) => (
       <tr>
         {Object.entries(frontMatter["owl"])
           .map(([key, value]) => {
-            return <td>
-              {
-                [value].flat().map(value => {
-                  return FormatQualifier(key, LinkClassOrProperty(key, value))
-                })
-              }
-            </td>
+            if (value) {
+              return <td>
+                {
+                  [value].flat().map(value => {
+                    return FormatQualifier(key, LinkClassOrProperty(key, value))
+                  })
+                }
+              </td>
+            } else {
+              return <td></td>
+            }
           }
           )}
       </tr>
