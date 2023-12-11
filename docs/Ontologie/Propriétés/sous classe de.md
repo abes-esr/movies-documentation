@@ -1,18 +1,17 @@
-  ---
-  description: ""
-  tags:
-    - source
-  owl:
-    "rdfs:label": "sous classe de@fr"
-    "rdf:type": null
-    "rdfs:domain": null
-    "rdfs:range": null
-    "owl:cardinality": "F/R"
-    "pq": null
-  ---
+---
+tags:
+  - source
+owl:
+  "rdfs:label": "sous classe de@fr"
+  "rdf:type": null
+  "rdfs:domain": null
+  "rdfs:range": null
+  "owl:cardinality": "F/R"
+  "pq": null
+---
 
-  <OntologyTable frontMatter={frontMatter}/>
+<OntologyTable frontMatter={frontMatter}/>
 
-  ## Définition
+## Définition
 
-  Cette propriété est équivalente à rdfs:subClassOf.
+Cette propriété est équivalente à rdfs:subClassOf.
