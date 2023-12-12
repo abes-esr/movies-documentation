@@ -4,10 +4,10 @@ tags:
   - sparql
 ---
 
-import SparqlEtab from '/docs/Modélisation Movies/Description des établissements/Généalogie des établissements/Cas usage.md' 
-import SparqlContrat from '/docs/Modélisation Movies/Contrat de documentation électronique/Cas usage.md'
-import SparqlDoctorat from '/docs/Modélisation Movies/Habilitation Doctorale/Cas usage.md'
-import SparqlCq from '/docs/Guides/Contrôles qualité.md'
+import SparqlEtab from '../Modélisation Movies/Description des établissements/Généalogie des établissements/Cas usage.md' 
+import SparqlContrat from '../Modélisation Movies/Contrat de documentation électronique/Cas usage.md'
+import SparqlDoctorat from '../Modélisation Movies/Habilitation Doctorale/Cas usage.md'
+import SparqlCq from '../Guides/Contrôles qualité.md'
 
 Cette page recense l'ensemble des requêtes SPARQL de la documentation.
 
