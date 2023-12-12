@@ -1,4 +1,5 @@
 ---
+slug: /Ontologie/Classes/SARE
 description: ""                      # Description de la page
 owl:                                 # Le contenu des métadonnées OWL est utilisé par la balise <OntologyTable>
   "rdfs:label": "SARE"                   # Label de la classe

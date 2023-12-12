@@ -1,4 +1,5 @@
 ---
+slug: /Ontologie/Classes/Institut de formation
 owl:
   "rdfs:label": "Institut de formation"
   "rdf:type": "owl:Class"

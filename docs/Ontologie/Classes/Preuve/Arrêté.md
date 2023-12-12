@@ -4,7 +4,7 @@ description: ""
 tags:
     - preuves
 owl:
-  "rdfs:label": "Arrêté@fr"
+  "rdfs:label": "Arrêté"
   "rdf:type": "owl:Class"
   "rdfs:subClassOf": "Preuve"
 ---

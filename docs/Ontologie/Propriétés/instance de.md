@@ -3,7 +3,7 @@ description: ""
 tags:
 - source
 owl:
-  "rdfs:label": "instance de@fr"
+  "rdfs:label": "instance de"
   "rdf:type": null 
   "rdfs:domain": null 
   "rdfs:range": null 

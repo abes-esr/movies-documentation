@@ -4,7 +4,7 @@ tags:
   - identifiants
   - description des organisations
 owl: 
-  "rdfs:label": "identifiant hal@fr"
+  "rdfs:label": "identifiant hal"
   "rdf:type": "owl:DatatypeProperty"
   "rdfs:domain": "Organisation"
   "rdfs:range": "xsd:string"

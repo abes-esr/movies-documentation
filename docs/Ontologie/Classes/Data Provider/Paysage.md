@@ -1,7 +1,7 @@
 ---
 slug: /Ontologie/Classes/Paysage
 owl:
-  "rdfs:label": "Paysage@fr"
+  "rdfs:label": "Paysage"
   "rdf:type": "owl:Class"
   "rdfs:subClassOf": "Data Provider"
 ---

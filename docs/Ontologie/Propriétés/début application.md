@@ -4,7 +4,7 @@ tags:
   - contrats
   - bornes chronologiques
 owl:
-  "rdfs:label": "début application@fr"
+  "rdfs:label": "début application"
   "rdf:type": "owl:DatatypeProperty"
   "rdfs:domain": "Preuve"
   "rdfs:range": "xsd:date"

@@ -1,4 +1,5 @@
 ---
+slug: /Ontologie/Classes/Institut
 owl:
   "rdfs:label": "Institut"
   "rdf:type": "owl:Class"

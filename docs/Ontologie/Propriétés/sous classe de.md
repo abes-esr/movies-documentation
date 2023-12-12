@@ -2,7 +2,7 @@
 tags:
   - source
 owl:
-  "rdfs:label": "sous classe de@fr"
+  "rdfs:label": "sous classe de"
   "rdf:type": null
   "rdfs:domain": null
   "rdfs:range": null

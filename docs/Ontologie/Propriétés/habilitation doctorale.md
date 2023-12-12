@@ -3,7 +3,7 @@ tags:
   - compétence doctorale
   - description des organisations
 owl:
-  "rdfs:label": "habilitation doctorale@fr"
+  "rdfs:label": "habilitation doctorale"
   "rdf:type": "owl:ObjectProperty"
   "rdfs:domain": "Organisation"
   "rdfs:range": "Habilitation doctorale"

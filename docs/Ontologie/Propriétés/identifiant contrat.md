@@ -4,7 +4,7 @@ tags:
   - identifiants
   - contrats
 owl: 
-  "rdfs:label": "identifiant contrat@fr"
+  "rdfs:label": "identifiant contrat"
   "rdf:type": "owl:DatatypeProperty"
   "rdfs:domain": "Contrat"
   "rdfs:range": "xsd:string"

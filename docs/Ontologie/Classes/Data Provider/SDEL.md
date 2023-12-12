@@ -1,7 +1,7 @@
 ---
 slug: /Ontologie/Classes/SDEL
 owl:
-  "rdfs:label": "SDEL@fr"
+  "rdfs:label": "SDEL"
   "rdf:type": "owl:Class"
   "rdfs:subClassOf": "Data Provider"
 ---

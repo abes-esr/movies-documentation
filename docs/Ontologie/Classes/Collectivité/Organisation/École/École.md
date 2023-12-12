@@ -1,4 +1,5 @@
 ---
+slug: /Ontologie/Classes/École
 owl:
   "rdfs:label": "École"
   "rdf:type": "owl:Class"

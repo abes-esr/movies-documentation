@@ -4,7 +4,7 @@ tags:
   - contrats
   - bornes chronologiques
 owl:
-  "rdfs:label": "uri@fr"
+  "rdfs:label": "uri"
   "rdf:type": "owl:DatatypeProperty"
   "rdfs:domain": null
   "rdfs:range": "xs:anyURI"

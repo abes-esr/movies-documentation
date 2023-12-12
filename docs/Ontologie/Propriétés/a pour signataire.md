@@ -2,7 +2,7 @@
 tags:
   - contrats
 owl:
-  "rdfs:label": "a pour signataire@fr"
+  "rdfs:label": "a pour signataire"
   "rdf:type": "owl:ObjectProperty"
   "rdfs:domain": "Contrat"
   "rdfs:range": "Organisation"

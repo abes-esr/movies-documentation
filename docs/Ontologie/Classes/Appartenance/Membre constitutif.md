@@ -4,7 +4,7 @@ description: ""
 tags:
   - composition des organisations
 owl:
-  "rdfs:label": "Membre constitutif@fr"
+  "rdfs:label": "Membre constitutif"
   "rdf:type": "owl:Class"
   "rdfs:subClassOf": Appartenance
 ---

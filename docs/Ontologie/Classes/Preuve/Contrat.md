@@ -1,11 +1,11 @@
 ---
-description: ""
 slug: /Ontologie/Classes/Contrat
+description: ""
 tags:
   - contrats
   - preuves
 owl:
-  "rdfs:label": "Contrat@fr"
+  "rdfs:label": "Contrat"
   "rdf:type": "owl:Class"
   "rdfs:subClassOf": "Preuve"
 ---

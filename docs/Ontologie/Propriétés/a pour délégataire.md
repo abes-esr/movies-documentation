@@ -3,7 +3,7 @@ description: ""
 tags:
   - qualificatifs
 owl:
-  "rdfs:label": "a pour délégataire@fr"
+  "rdfs:label": "a pour délégataire"
   "rdf:type": "owl:DatatypeProperty"
   "rdfs:domain": "habilitation doctorale"
   "rdfs:range": "Organisation"
