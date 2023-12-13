@@ -6,7 +6,7 @@ owl:
   "rdfs:label": "source"
   "rdf:type": null
   "rdfs:domain": null
-  "rdfs:range": "Date Provider"
+  "rdfs:range": "Data Provider"
   "owl:cardinality": "F/R"
   "pq": null
 ---
