@@ -17,7 +17,7 @@ Dans la mesure du possible les modifications ne doivent pas être réalisées di
 
 Pour documenter une nouvelle propriété ou classe il faut créer un nouveau fichier markdown (.md) dans le dossier [/docs/Ontologie/Propriétés](https://github.com/abes-esr/movies-documentation/docs/Ontologie/Propriétés) ou bien dans le dossier [/docs/Ontologie/Classes](https://github.com/abes-esr/movies-documentation/docs/Ontologie/Classes). 
 
-Il est possible de s'aider du modèle suivant [https://github.com/abes-esr/movies-documentation/docs/Ontologie/Propriétés/_modele.md](docs/Ontologie/Propriétés/_modele.md) ou [https://github.com/abes-esr/movies-documentation/docs/Ontologie/Classes/_modele.md](/docs/Ontologie/Classes/_modele.md) pour créer le fichier markdown.
+Il est possible de s'aider du modèle suivant https://github.com/abes-esr/movies-documentation/docs/Ontologie/Propriétés/_modele.md ou https://github.com/abes-esr/movies-documentation/docs/Ontologie/Classes/_modele.md pour créer le fichier markdown.
 
 :::caution
 
