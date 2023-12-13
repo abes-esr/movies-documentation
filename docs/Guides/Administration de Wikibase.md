@@ -29,6 +29,9 @@ Ou depuis la page d'une entité :
 ## Ajouter/Modifier/Supprimer une propriété
 
 * Créer une nouvelle propriété : https://movies.abes.fr/wiki/Special:NewProperty
+* Supprimer une propriété : la suppression est réalisée depuis l'interface de Wikibase depuis la page d'une propriété (`Plus` ① -> `Supprimer` ②), après authentification.\
+![image](https://github.com/abes-esr/movies-documentation/assets/60341438/c3dde97a-a8b3-4984-8b8c-c81033c8ccd4)
+
 
 :::note
 
@@ -46,10 +49,7 @@ La modification est réalisée depuis l'interface de Wikibase depuis la page de 
 
 ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/c56e7ad2-25e4-48ad-8c14-5dee893ad649)
 
-* Supprimer une entité : 
-
-La suppression est réalisée depuis l'interface de Wikibase depuis la page de l'entité concernée (`Plus` ① -> `Supprimer` ②), après authentification.
-
+* Supprimer une entité : la suppression est réalisée depuis l'interface de Wikibase depuis la page de l'entité concernée (`Plus` ① -> `Supprimer` ②), après authentification.\
 ![image](https://github.com/abes-esr/movies-documentation/assets/60341438/6d8dfed5-4f0d-48a8-bafa-14b69ccb9ed2)
 
 
