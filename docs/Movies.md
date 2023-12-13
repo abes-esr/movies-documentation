@@ -17,4 +17,5 @@ Cette documentation se divise en trois grandes sections :
 * **Documentation :** https://movies.abes.fr/doc/
 * **Sparql :** https://movies.abes.fr/sparql/
 * **API :** https://movies.abes.fr/api/
+* **OpenRefine :** https://refmovies.abes.fr/
 
