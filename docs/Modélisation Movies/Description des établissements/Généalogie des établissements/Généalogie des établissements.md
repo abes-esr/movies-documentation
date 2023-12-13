@@ -21,6 +21,7 @@ graph LR
     PRED -..-> |preuve| P
     PRED -..-> |source| xsd:string
     PRED -..-> |type| T
+    PRED  -..-> |début| xsd:dateTime 
 ```
 
 ## Successeurs
@@ -36,6 +37,7 @@ graph LR
     SUCC -..-> |preuve| P
     SUCC -..-> |source| xsd:string
     SUCC -..-> |type| T
+    SUCC -..-> |début| xsd:dateTime 
 ```
 
 ## Propriétés
@@ -50,6 +52,7 @@ graph LR
 
 <Claim emphase="true" property="a pour prédécesseur">
     <Statement value="Université Paris 11">
+        <Qualifier property="début">2015</Qualifier>
         <Qualifier property="preuve">Arrêté du XXX</Qualifier>
         <References>
             <Reference>
@@ -59,8 +62,9 @@ graph LR
     </Statement>
 </Claim>
 
-<Claim emphase="true" property="a pour a pour successeur">
+<Claim emphase="true" property="a pour successeur">
     <Statement value="Université Paris-Saclay (EPE)">
+        <Qualifier property="début">2020</Qualifier>
         <Qualifier property="preuve">Arrêté du XXX</Qualifier>
         <References>
             <Reference>

@@ -1,9 +1,11 @@
 # movies-documentation
 
-Dépôt de l'application [docusaurus 2](https://docusaurus.io/) permettant l'ouverture publique de la documentation du projet movies.
+Dépôt de l'application [docusaurus 3](https://docusaurus.io/) permettant l'accès à la documentation du projet movies.
 
-Une version test est accessible sur le site web https://movies-test.abes.fr/doc
+Une version est accessible sur le site web https://movies.abes.fr/doc
 
 Le site est déployé à l'aide de la configuration suivante :  
-https://github.com/abes-esr/projet2024-docker
+https://github.com/abes-esr/movies-docker
  
+
+

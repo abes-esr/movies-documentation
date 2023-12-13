@@ -3,7 +3,7 @@ description: ""
 tags:
   - description des organisations
 owl:
-  "rdfs:label": "forme juridique@fr"
+  "rdfs:label": "forme juridique"
   "rdf:type": "owl:ObjectProperty"
   "rdfs:domain": "Organisation"
   "rdfs:range": "Forme Juridique"

@@ -11,6 +11,7 @@ WORKDIR /app/
 
 # Install dependencies
 COPY ./package*.json /app/
+RUN npm config set legacy-peer-deps true
 RUN npm install
 
 # Copy the source code over
@@ -24,5 +25,6 @@ RUN npm run build
 FROM nginx:1.25 as movies-documentation-image
 # Copy what we've installed/built from production
 COPY --from=build-image /app/build /usr/share/nginx/html/
+COPY ./.docker/nginx-default.conf.template   /etc/nginx/templates/default.conf.template
 CMD ["nginx", "-g", "daemon off;"]
 EXPOSE 80

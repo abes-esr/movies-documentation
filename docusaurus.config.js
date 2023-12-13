@@ -1,8 +1,8 @@
 // @ts-check
 // Note: type annotations allow type checking and IDEs autocompletion
 
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-const darkCodeTheme = require('prism-react-renderer/themes/dracula');
+const lightCodeTheme = require('prism-react-renderer').themes.github;
+const darkCodeTheme = require('prism-react-renderer').themes.dracula;
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
@@ -11,11 +11,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of the site here
-  url: 'https://movies-test.abes.fr',
+  url: 'https://movies.abes.fr',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/doc/',
-
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
 
@@ -77,7 +76,8 @@ const config = {
         title: '',
         logo: {
           alt: 'Logo Movies',
-          src: 'img/logo.svg',
+          src: 'img/logo.png',
+          srcDark: 'img/logo_dark.png',
         },
         items: [
           {

@@ -4,7 +4,7 @@ tags:
   - qualificatifs
   - preuves
 owl:
-  "rdfs:label": "preuve@fr"
+  "rdfs:label": "preuve"
   "rdfs:domain": null
   "rdfs:range": "Preuve"
   "owl:cardinality": "F/R"

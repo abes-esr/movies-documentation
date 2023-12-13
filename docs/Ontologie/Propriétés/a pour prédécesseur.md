@@ -3,7 +3,7 @@ description: ""
 tags:
   - généalogie
 owl:
-  "rdfs:label": "a pour prédécesseur@fr"
+  "rdfs:label": "a pour prédécesseur"
   "rdf:type": "owl:ObjectProperty"
   "rdfs:domain": "Organisation"
   "rdfs:range": "Organisation"

@@ -22,11 +22,15 @@ const LinkClassOrProperty = (context, value) => {
   const linking_contexts = ["rdfs:domain", "rdfs:range", "pq", "rdfs:subClassOf"];
   const allowed_prefix = ["mov", null];
 
+  if (!value) {
+    return value
+  }
+
   if (linking_contexts.includes(context) && allowed_prefix.includes(GetPrefix(value))) {
     if (IsCapitalized(value)) {
-      return <a href={"/Ontologie/Classes/" + value}>{value}</a>
+      return <a href={"/doc/Ontologie/Classes/" + value }>{value}</a>
     } else {
-      return <a href={"/Ontologie/Propriétés/" + value}>{value}</a>
+      return <a href={"/doc/Ontologie/Propriétés/" + value }>{value}</a>
     }
   } else {
     return value
@@ -57,21 +61,25 @@ export const OntologyTable = ({ frontMatter }) => (
             <th>
               {keys}
             </th>
-          )
-        }
+          )}
       </tr>
     </thead>
     <tbody>
       <tr>
         {Object.entries(frontMatter["owl"])
           .map(([key, value]) => {
-            return <td>
-              {
-                [value].flat().map(value => {
-                  return FormatQualifier(key, LinkClassOrProperty(key, value))
-                })
-              }
-            </td>
+            if (value) {
+              return <td>
+                {
+                  [value].flat().map(value => {
+                    return FormatQualifier(key, LinkClassOrProperty(key, value))
+                  })
+                }
+              </td>
+            } else {
+              return <td>
+              </td>
+            }
           }
           )}
       </tr>

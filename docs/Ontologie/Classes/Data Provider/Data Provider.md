@@ -1,7 +1,7 @@
 ---
 slug: /Ontologie/Classes/Data Provider
 owl:
-  "rdfs:label": "Data Provider@fr"
+  "rdfs:label": "Data Provider"
   "rdf:type": "owl:Class"
 ---
 
@@ -9,7 +9,7 @@ owl:
 
 ## Définition
 
-Agent responsable d'un import dans la base de données Movies. Le data provider est utilisé comme objet d'une propriété [source](/Ontologie/Propriétés/source).
+Agent responsable d'un import dans la base de données Movies. Le data provider est utilisé comme valeur d'une propriété [source](/Ontologie/Propriétés/source).
 
 :::caution
 

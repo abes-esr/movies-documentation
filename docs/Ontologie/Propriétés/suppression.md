@@ -5,7 +5,7 @@ tags:
   - bornes chronologiques
   - description des organisations
 owl:
-  "rdfs:label": "suppression@fr"
+  "rdfs:label": "suppression"
   "rdf:type": "owl:DatatypeProperty"
   "rdfs:domain": "Organisation"
   "rdfs:range": "xsd:date"

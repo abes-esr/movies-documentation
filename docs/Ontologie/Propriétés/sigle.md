@@ -3,7 +3,7 @@ description: ""
 tags:
   - description des organisations
 owl:
-  "rdfs:label": "sigle@fr"
+  "rdfs:label": "sigle"
   "rdf:type": "owl:DatatypeProperty"
   "rdfs:domain": "Organisation"
   "rdfs:range": "xsd:string"
@@ -19,4 +19,4 @@ owl:
 
 ## Définition
 
-Permet de désigner le sigle d'une organisation. Une [Organisation](../Classes/Organisation/Organisation.md)peut avoir plusieurs sigles au cours de sa vie.
+Permet de désigner le sigle d'une organisation. Une [Organisation](../Classes/Collectivité/Organisation/Organisation.md) peut avoir plusieurs sigles au cours de sa vie.

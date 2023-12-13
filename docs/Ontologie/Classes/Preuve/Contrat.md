@@ -1,11 +1,11 @@
 ---
-description: ""
 slug: /Ontologie/Classes/Contrat
+description: ""
 tags:
   - contrats
   - preuves
 owl:
-  "rdfs:label": "Contrat@fr"
+  "rdfs:label": "Contrat"
   "rdf:type": "owl:Class"
   "rdfs:subClassOf": "Preuve"
 ---
@@ -22,4 +22,4 @@ owl:
 >
 > On distingue le contrat privé (conclu entre au moins deux personnes privées) et le contrat administratif (conclu par l’administration, tel que les marchés publics).
 >
-> (<https://www.vie-publique.fr/fiches/276037-quest-ce-quun-contrat>)
+> ([https://www.vie-publique.fr/fiches/276037-quest-ce-quun-contrat](<https://www.vie-publique.fr/fiches/276037-quest-ce-quun-contrat>))

@@ -4,7 +4,7 @@ description: ""
 tags:
     - preuves
 owl:
-  "rdfs:label": "Arrêté@fr"
+  "rdfs:label": "Arrêté"
   "rdf:type": "owl:Class"
   "rdfs:subClassOf": "Preuve"
 ---
@@ -35,4 +35,4 @@ owl:
 > * réglementaire, lorsqu'il pose une règle générale (arrêté municipal interdisant à toute personne circulant dans une rue d’y stationner, par exemple) ;
 > * ou individuel (ex : nomination d’un fonctionnaire, par exemple).
 >
-> (<https://www.vie-publique.fr/fiches/20264-quest-ce-quun-arrete>)
+> ([https://www.vie-publique.fr/fiches/20264-quest-ce-quun-arrete](<https://www.vie-publique.fr/fiches/20264-quest-ce-quun-arrete>))

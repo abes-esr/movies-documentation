@@ -4,7 +4,7 @@ description: ""
 tags:
     - preuves
 owl:
-  "rdfs:label": "Ordonnance@fr"
+  "rdfs:label": "Ordonnance"
   "rdf:type": "owl:Class"
   "rdfs:subClassOf": "Preuve"
 ---
@@ -45,4 +45,4 @@ owl:
 >
 > La nature juridique de l’ordonnance non ratifiée est celle d’un acte mixte, pour partie législatif et pour partie réglementaire et qui est désormais potentiellement soumis à un double contrôle juridictionnel.
 >
-> (<https://www.vie-publique.fr/fiches/20262-quest-ce-quune-ordonnance>)
+> ([https://www.vie-publique.fr/fiches/20262-quest-ce-quune-ordonnance](<https://www.vie-publique.fr/fiches/20262-quest-ce-quune-ordonnance>))
