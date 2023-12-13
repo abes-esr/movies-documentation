@@ -1,4 +1,5 @@
 ---
+slug: /Ontologie/Classes/            # Ajouter le nom de la classe après le dernier slash.
 description: ""                      # Description de la page
 tags:                                # Liste des tags, permet de rendre accessible la page de la propriété depuis l'indexe thématique
   - ""                               # tag 1
