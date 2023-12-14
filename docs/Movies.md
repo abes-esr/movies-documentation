@@ -13,9 +13,9 @@ Cette documentation se divise en trois grandes sections :
 
 # Accès rapide
 
-* **Movies (Wikibase) :** https://movies.abes.fr/
-* **Documentation :** https://movies.abes.fr/doc/
-* **Sparql :** https://movies.abes.fr/sparql/
-* **API :** https://movies.abes.fr/api/
+* **Movies (Wikibase) :** [https://movies.abes.fr/](/)
+* **Documentation :** [https://movies.abes.fr/doc/](/doc)
+* **Sparql :** [https://movies.abes.fr/sparql/](/sparql/)
+* **API :** [https://movies.abes.fr/api/](/api)
 * **OpenRefine :** https://refmovies.abes.fr/
 
