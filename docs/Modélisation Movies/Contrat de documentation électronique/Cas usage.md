@@ -93,18 +93,25 @@ Cette requête permet de retrouver l’héritier d’un contrat (en partant des 
 Sont considérés comme héritiers les successeurs non morts.
 
 ```sparql
-SELECT ?beneficiairesLabel WHERE {
-  { SELECT ?ben WHERE { wd:Q10505 wdt:P24 ?ben. } } # Signataires
+PREFIX wdt: <https://movies.abes.fr/prop/direct/>
+PREFIX wd: <https://movies.abes.fr/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <https://movies.abes.fr/prop/>
+PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
+
+SELECT DISTINCT ?beneficiairesLabel WHERE {
+  { SELECT ?ben WHERE { wd:Q516 wdt:P16 ?ben. } } # Signataires
   UNION
-  { SELECT ?ben WHERE { wd:Q10505 wdt:P22 ?ben. } } # Bénéficiaires
+  { SELECT ?ben WHERE { wd:Q516 wdt:P14 ?ben. } } # Bénéficiaires
   {
     SELECT * WHERE {
-      { FILTER(NOT EXISTS { ?ben wdt:P19 ?date_suppression. }) } # Bénéficiaires directs toujours en vie (qui n'a pas de date de mort)
+      { FILTER(NOT EXISTS { ?ben wdt:P11 ?date_suppression. }) } # Bénéficiaires directs toujours en vie (qui n'a pas de date de mort)
       UNION
       {
-        ?ben wdt:P19 ?date_suppression; # Héritiers des bénéficiaires morts (qui a une date de mort)
-          (wdt:P52*) ?successeur.
-        FILTER(NOT EXISTS { ?successeur wdt:P19 ?date_suppression. }) # On enlève les héritiers morts
+        ?ben wdt:P11 ?date_suppression; # Héritiers des bénéficiaires morts (qui a une date de mort)
+          wdt:P41 ?successeur.
+         FILTER(NOT EXISTS { ?successeur wdt:P11 ?date_suppression. }) # On enlève les héritiers morts
         
         BIND(?successeur AS ?beneficiaires_indirects)
       }
