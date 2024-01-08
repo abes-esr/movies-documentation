@@ -1,5 +1,8 @@
 ---
 slug: /Ontologie/Classes/EPE
+owl:                                 # Le contenu des métadonnées OWL est utilisé par la balise <OntologyTable>
+  "rdfs:label": "EPE"                   # Label de la classe
+  "rdf:type": "owl:Class"
 ---
 
 ## Définition
