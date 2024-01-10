@@ -111,7 +111,7 @@ https://movies.abes.fr/api/v1#/default/get_SDEL_liste_contrats_echus
 
 ## Lister les contrats signés par une Organisation
 
-Il faut spécifier le SIRET de l'établissement à la place de ?_siret, ou bien utiliser l'API GRLC.
+Pour utiliser la requête ci-dessous il faut remplacer le paramètre ?_siret.
 
 ```sparql
 #+ endpoint: https://movies.abes.fr/proxy/wdqs/bigdata/namespace/wdq/sparql?
