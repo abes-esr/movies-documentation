@@ -144,8 +144,11 @@ WHERE
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ```
+note:::
 
-https://movies.abes.fr/api/v1#/default/get_SEDL_contrats_par_signataire
+https://movies.abes.fr/api/v1#/default/SEDL_contrats_par_signataire.csv?siret=123456879
+
+:::
 
 ## Retrouver les héritiers d'un contrat
 
@@ -168,7 +171,7 @@ PREFIX skos: <http://www.w3.org/2004/02/skos/core#>
 
 SELECT DISTINCT ?beneficiairesLabel WHERE {
   ?contrat skos:altLabel ?label;
-           
+          
   FILTER(STR(?label) = ?_id)
   
   { SELECT ?ben WHERE { ?contrat wdt:P5 ?ben. } } # Signataires
@@ -192,4 +195,11 @@ SELECT DISTINCT ?beneficiairesLabel WHERE {
 }
 ```
 
-https://movies.abes.fr/api/v1#/default/get_SDEL_beneficiaires_contrat
+
+note:::
+
+GRLC ne substitue pas les paramètre dans FILTER. Il faudrait réécrire la requête pour rendre visible ?_id à GRLC.
+
+https://movies.abes.fr/api/v1#/default/SDEL_beneficiaires_contrat
+
+:::
