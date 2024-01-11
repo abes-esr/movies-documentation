@@ -18,15 +18,15 @@ PREFIX p: <https://movies.abes.fr/prop/>
 PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
 
 SELECT ?nom ?codeEtab WHERE {
-  ?etab wdt:P3 ?codeEtab;
-     wdt:P40 ?nom.
+  ?etab wdt:P9 ?codeEtab;
+     wdt:P48 ?nom.
     
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ```
 :::note
 
-https://movies.abes.fr/api/v1/membres_reseau_these.csv
+https://movies.abes.fr/api/v1/TH_membres_reseau_these.csv
 
 :::
 
@@ -39,13 +39,15 @@ PREFIX wikibase: <http://wikiba.se/ontology#>
 PREFIX bd: <http://www.bigdata.com/rdf#>
 PREFIX p: <https://movies.abes.fr/prop/>
 PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
+PREFIX pqv: <https://movies.abes.fr/prop/qualifier/value/>
 
-SELECT ?etabLabel ?code_etab ?debut ?fin WHERE {
-  ?etab wdt:P3 ?code_etab;
-     p:P6 ?habiliatation.
+SELECT ?etabLabel ?debut ?fin WHERE {
+  ?etab wdt:P9 ?codeEtab;
+     p:P22 ?habiliatation;
+     wdt:P22 wd:Q19.
   
-  ?habiliatation pq:P4 ?debut.
-  OPTIONAL {?habiliatation pq:P5 ?fin}.
+  OPTIONAL {?habiliatation pqv:P12/wikibase:timeValue ?debut.}
+  OPTIONAL {?habiliatation pqv:P20/wikibase:timeValue ?fin}
   
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
@@ -55,11 +57,11 @@ SELECT ?etabLabel ?code_etab ?debut ?fin WHERE {
 
 Pour l'ensemble des établissements :
 
-https://movies.abes.fr/api/v1/habilitations_doctorales.csv
+https://movies.abes.fr/api/v1/TH_habilitations_doctorales.csv
 
 Ou pour un seul établissement (par code établissement) :
 
-https://movies.abes.fr/api/v1/movies-api/habilitation_doctorale?codeEtab=PESC
+https://movies.abes.fr/api/v1/movies-api/TH_habilitation_doctorale?codeEtab=PESC
 
 :::
 
@@ -72,20 +74,22 @@ PREFIX wikibase: <http://wikiba.se/ontology#>
 PREFIX bd: <http://www.bigdata.com/rdf#>
 PREFIX p: <https://movies.abes.fr/prop/>
 PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
+PREFIX pqv: <https://movies.abes.fr/prop/qualifier/value/>
 
-SELECT ?etabLabel ?codeEtab ?debut WHERE {
-  ?etab wdt:P3 ?codeEtab;
-     p:P6 ?habiliatation.
+SELECT ?etabLabel ?debut ?fin WHERE {
+  ?etab wdt:P9 ?codeEtab;
+     p:P22 ?habiliatation;
+     wdt:P22 wd:Q19.
   
-  OPTIONAL {?habiliatation pq:P4 ?debut}.
-  FILTER NOT EXISTS { ?habiliatation pq:P5 ?fin }.
+  OPTIONAL {?habiliatation pqv:P12/wikibase:timeValue ?debut.}
+  FILTER NOT EXISTS { ?habiliatation pqv:P20/wikibase:timeValue ?fin }.
   
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ```
 :::note
 
-https://movies.abes.fr/api/v1/habilitations_doctorales_en_cours.csv
+https://movies.abes.fr/api/v1/TH_habilitations_doctorales_en_cours.csv
 
 :::
 
@@ -98,20 +102,23 @@ PREFIX wikibase: <http://wikiba.se/ontology#>
 PREFIX bd: <http://www.bigdata.com/rdf#>
 PREFIX p: <https://movies.abes.fr/prop/>
 PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
+PREFIX pqv: <https://movies.abes.fr/prop/qualifier/value/>
 
-SELECT ?etabLabel ?codeEtab ?debut ?fin WHERE {
-  ?etab wdt:P3 ?codeEtab;
-     p:P6 ?habiliatation.
+SELECT ?etabLabel ?debut ?fin WHERE {
+  ?etab wdt:P9 ?codeEtab;
+     p:P22 ?habiliatation;
+     wdt:P22 wd:Q19.
   
-  OPTIONAL {?habiliatation pq:P4 ?debut}.
-  ?habiliatation pq:P5 ?fin.
+  OPTIONAL {?habiliatation pqv:P12/wikibase:timeValue ?debut.}
+  ?habiliatation pqv:P20/wikibase:timeValue ?fin
   
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
+
 ```
 :::note
 
-https://movies.abes.fr/api/v1/habilitations_doctorales_echues.csv
+https://movies.abes.fr/api/v1/TH_habilitations_doctorales_echues.csv
 
 :::
 
@@ -146,10 +153,34 @@ https://movies.abes.fr/api/v1/ascendances_descendances_etab_these.csv?codeEtab=U
 
 ## Assistance déportée : retrouver les établissements à contacter pour les thèses de la COMUE USPC
 
+Pour utiliser la requête ci-dessous il faut saisir une valeur à la place du paramètre ?_codeEtab ou utiliser l'API GRLC
+
 ```sparql
-TODO
+PREFIX wdt: <https://movies.abes.fr/prop/direct/>
+PREFIX wd: <https://movies.abes.fr/entity/>
+PREFIX wikibase: <http://wikiba.se/ontology#>
+PREFIX bd: <http://www.bigdata.com/rdf#>
+PREFIX p: <https://movies.abes.fr/prop/>
+PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
+
+SELECT DISTINCT ?etabLabel ?codeEtabCible  WHERE {
+  ?etab wdt:P9 ?_codeEtab.
+
+  ?etab p:P22 ?hab. # Récupération de l'habilitation
+    
+  ?hab <https://movies.abes.fr/prop/statement/P22> wd:Q20; # en cas de transfert
+       pq:P1 ?beneficiaire.
+  
+  ?beneficiaire wdt:P9 ?codeEtabCible.
+  
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+
 ```
 
 :::note
-TODO
+
+https://movies.abes.fr/api/v1/TH_assistance_deportee.csv?codeEtab=GREN
+
 :::
+

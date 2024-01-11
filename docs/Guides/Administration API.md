@@ -59,7 +59,7 @@ Par exemple : https://movies.abes.fr/api/v1/CQ_coherence_dates_habilitation.csv 
 
 ## Paramètres des requêtes
 
- Les variables de la requête qui commencent par `?_` sont transformés automatiquement en paramètre de l'ULR. La requête ci-dessous permet d'avoir une URL avec la structure suivante : https://movies.abes.fr/api/v1/TH_habilitation_doctorale.csv?codeEtab=UPAS. Au moment de l'exécution de la requête `?_codeEtab` est automatiquement substitué par la valeur passée en argument de la requête : `UPAS`.
+ Les variables de la requête qui commencent par `?_` sont transformées automatiquement en paramètre de l'ULR. La requête ci-dessous permet d'avoir une URL avec la structure suivante : https://movies.abes.fr/api/v1/TH_habilitation_doctorale.csv?codeEtab=UPAS. Au moment de l'exécution de la requête `?_codeEtab` est automatiquement substitué par la valeur passée en argument de la requête : `UPAS`.
 
  Il est possible de spécifier plusieurs arguments pour une requête.
 

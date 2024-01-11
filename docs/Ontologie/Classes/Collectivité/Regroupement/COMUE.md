@@ -1,5 +1,8 @@
 ---
 slug: /Ontologie/Classes/COMUE
+owl:                                 # Le contenu des métadonnées OWL est utilisé par la balise <OntologyTable>
+  "rdfs:label": "COMUE"                   # Label de la classe
+  "rdf:type": "owl:Class"
 ---
 
 ## Définition

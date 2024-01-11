@@ -9,7 +9,7 @@ Cette section détaille l'ensemble des requêtes de contrôle qualité. Dans l'[
 
 ## Contrôle des dates
 
-### Date de début et de fin d'existence
+### Date de début et de fin
 
 ```sparql
 PREFIX wdt: <https://movies.abes.fr/prop/direct/>
@@ -22,16 +22,23 @@ PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
 SELECT ?statement ?problem ?debut ?fin WHERE {
   {
     ?statement wdt:P10 ?debut;
-      wdt:P11 ?fin.
+      wdt:P54 ?fin.
     BIND("date de création > date de suppression" AS ?problem)
   }
   UNION
   {
-    ?statement pq:P4 ?debut;
-      pq:P5 ?fin.
+    ?statement pq:P12 ?debut;
+      pq:P20 ?fin.
     BIND("début > fin" AS ?problem)
   }
-  FILTER(?debut < ?fin)
+    UNION
+  {
+    ?statement pq:P11 ?debut;
+      pq:P19 ?fin.
+    BIND("début d'application > fin d'application" AS ?problem)
+  }
+  
+  FILTER(?debut > ?fin)
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
 }
 ```
@@ -54,13 +61,14 @@ PREFIX wikibase: <http://wikiba.se/ontology#>
 PREFIX bd: <http://www.bigdata.com/rdf#>
 PREFIX p: <https://movies.abes.fr/prop/>
 PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
+PREFIX psv: <https://movies.abes.fr/prop/statement/value/>
 
 SELECT ?statement ?problem (count(?c) as ?count) WHERE {
   {
-    ?statement wdt:P10 ?c.
+    ?statement psv:P10/wikibase:timeValue ?c.
     BIND("Plusieur dates de création" AS ?problem)
   } UNION {
-    ?statement wdt:P11 ?c.
+    ?statement psv:P54/wikibase:timeValue ?c.
     BIND("Plusieur dates de suppression" AS ?problem)
   }
 } GROUP BY ?statement ?problem
@@ -84,6 +92,7 @@ https://movies.abes.fr/api/v1/CQ_unicite_dates_creation_suppresion.csv
 ### Cohérence des dates d'existence et des dates d'habilitation
 
 ```sparql
+
 PREFIX wdt: <https://movies.abes.fr/prop/direct/>
 PREFIX wd: <https://movies.abes.fr/entity/>
 PREFIX wikibase: <http://wikiba.se/ontology#>
@@ -93,17 +102,17 @@ PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
 
 SELECT DISTINCT ?etab ?habiliatation ?probleme ?date ?date_habilitation WHERE {
   {
-    ?etab p:P6 ?habiliatation;
-      wdt:P10 ?date.
+    ?etab p:P22 ?habiliatation;
+      wdt:P10 ?date. # date de création
     
-    ?habiliatation pq:P4 ?date_habilitation.
+    ?habiliatation pq:P12 ?date_habilitation.
     BIND("Le début d'habilitation est inférieur à la date de création de l'établissement" AS ?probleme)
     FILTER(?date_habilitation < ?date)
   }
   UNION
   {
-    ?etab p:P6 ?habiliatation;
-      wdt:P11 ?date.
+    ?etab p:P22 ?habiliatation;
+      wdt:P54 ?date. # date de suppression
     
     ?habiliatation pq:P5 ?date_habilitation.
     BIND("La fin d'habilitation est supérieure à la date de suppression de l'établissement" AS ?probleme)
@@ -136,17 +145,17 @@ PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
 
 
 SELECT ?org ?code_etablissement ?date_suppression ?erreur WHERE {
-   ?org wdt:P3 ?code_etablissement;
-        wdt:P11 ?date_suppression;                    # établissement disparu
-        wdt:P6 <https://movies.abes.fr/entity/Q8>.    # établissement ayant été habilité au moins une fois
+   ?org wdt:P9 ?code_etablissement;
+        wdt:P54 ?date_suppression;                    # établissement disparu
+        wdt:P22 wd:Q19.    # établissement ayant été habilité au moins une fois
   
    # absence de transfert
    FILTER NOT EXISTS {
-     ?org  wdt:P6 <https://movies.abes.fr/entity/Q> # classes de l'habilitation transférée
+     ?org  wdt:P22 wd:Q20 # classes de l'habilitation transférée
    }
   
   BIND("Rajoutez un transfert d'habilitation dont la date correspond à celle de suppression de l'établissement" AS ?erreur)
-} 
+}  
 ```
 
 :::note
@@ -161,7 +170,6 @@ Lorsqu'un établissement a été habilité et qu'il disparait il faut explicitem
 ### Unicité des identifiants
 
 ```sparql
-
 PREFIX wdt: <https://movies.abes.fr/prop/direct/>
 PREFIX wd: <https://movies.abes.fr/entity/>
 PREFIX wikibase: <http://wikiba.se/ontology#>
@@ -169,39 +177,27 @@ PREFIX bd: <http://www.bigdata.com/rdf#>
 PREFIX p: <https://movies.abes.fr/prop/>
 PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
 
-SELECT ?statement ?problem (count(?identifiant) as ?count) WHERE {
+SELECT ?identifiant ?problem (count(?identifiant) as ?count) WHERE {
   {
     ?statement wdt:P36 ?identifiant.
     BIND("Indentifiant Paysage non unique" AS ?problem) 
   } UNION {
-    ?statement wdt:P35 ?identifiant.
+    ?statement wdt:P31 ?identifiant.
     BIND("Indentifiant Idref non unique" AS ?problem)
   } UNION {
-    ?statement wdt:P64 ?identifiant.
+    ?statement wdt:P23 ?identifiant.
     BIND("Indentifiant CNRS non unique" AS ?problem)
   } UNION {
-    ?statement wdt:P70 ?identifiant.
+    ?statement wdt:P33 ?identifiant.
     BIND("Indentifiant ISNI non unique" AS ?problem)
   } UNION {
-    ?statement wdt:P33 ?identifiant.
+    ?statement wdt:P40 ?identifiant.
     BIND("Indentifiant RNSR non unique" AS ?problem)
   } UNION {
-    ?statement wdt:P3 ?identifiant.
+    ?statement wdt:P9 ?identifiant.
     BIND("Indentifiant code établissement non unique" AS ?problem)
-  } UNION {
-    ?statement wdt:P7 ?identifiant.
-    BIND("Indentifiant SIREN non unique" AS ?problem)
-  } UNION {
-    ?statement wdt:P8 ?identifiant.
-    BIND("Indentifiant SIRET non unique" AS ?problem)
-  } UNION {
-    ?statement wdt:P7 ?identifiant.
-    BIND("Indentifiant SIREN non unique" AS ?problem)
-  } UNION {
-    ?statement wdt:P8 ?identifiant.
-    BIND("Indentifiant SIRET non unique" AS ?problem)
   }
-} GROUP BY ?statement ?problem
+} GROUP BY ?identifiant ?problem
 HAVING (?count > 1)
 ```
 :::note
@@ -222,33 +218,33 @@ PREFIX bd: <http://www.bigdata.com/rdf#>
 PREFIX p: <https://movies.abes.fr/prop/>
 PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
 
-SELECT ?identifiant ?problem (count(?identifiant) as ?count) WHERE {
+SELECT ?statement ?problem (count(?identifiant) as ?count) WHERE {
   {
     ?statement wdt:P36 ?identifiant.
     BIND("Indentifiant Paysage non unique" AS ?problem) 
   } UNION {
-    ?statement wdt:P35 ?identifiant.
+    ?statement wdt:P31 ?identifiant.
     BIND("Indentifiant Idref non unique" AS ?problem)
   } UNION {
-    ?statement wdt:P64 ?identifiant.
+    ?statement wdt:P23 ?identifiant.
     BIND("Indentifiant CNRS non unique" AS ?problem)
   } UNION {
-    ?statement wdt:P70 ?identifiant.
+    ?statement wdt:P33 ?identifiant.
     BIND("Indentifiant ISNI non unique" AS ?problem)
   } UNION {
-    ?statement wdt:P33 ?identifiant.
+    ?statement wdt:P40 ?identifiant.
     BIND("Indentifiant RNSR non unique" AS ?problem)
   } UNION {
-    ?statement wdt:P3 ?identifiant.
+    ?statement wdt:P9 ?identifiant.
     BIND("Indentifiant code établissement non unique" AS ?problem)
   } UNION {
-    ?statement wdt:P7 ?identifiant.
+    ?statement wdt:P43 ?identifiant.
     BIND("Indentifiant SIREN non unique" AS ?problem)
   } UNION {
-    ?statement wdt:P8 ?identifiant.
+    ?statement wdt:P44 ?identifiant.
     BIND("Indentifiant SIRET non unique" AS ?problem)
   }
-} GROUP BY ?identifiant ?problem
+} GROUP BY ?statement ?problem
 HAVING (?count > 1)
 ```
 
@@ -272,16 +268,16 @@ PREFIX bd: <http://www.bigdata.com/rdf#>
 
 SELECT ?predecesseur ?predecesseurLabel ?predicat ?successeur ?successeurLabel WHERE {
   {
-    ?successeur wdt:P1 wd:Q9;
-      wdt:P42 ?predecesseur.
-    FILTER(NOT EXISTS { ?predecesseur wdt:P41 ?successeur. })
+    ?successeur wdt:P47 [wdt:P53* wd:Q8];
+      wdt:P4 ?predecesseur.
+    FILTER(NOT EXISTS { ?predecesseur wdt:P6 ?successeur. })
     BIND("a pour prédécesseur" AS ?predicat)
   }
   UNION
   {
-    ?predecesseur wdt:P1 wd:Q9;
-      wdt:P41 ?successeur.
-    FILTER(NOT EXISTS { ?successeur wdt:P42 ?predecesseur. })
+    ?predecesseur wdt:P47 [wdt:P53* wd:Q8];
+      wdt:P6 ?successeur.
+    FILTER(NOT EXISTS { ?successeur wdt:P4 ?predecesseur. })
     BIND("a pour successeur" AS ?predicat)
   }
   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
@@ -307,12 +303,12 @@ PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
 
 SELECT ?source ?target WHERE {
   {
-    ?source (wdt:P41+) ?target.
+    ?source (wdt:P6+) ?target.
     FILTER(?source = ?target)
   }
   UNION
   {
-    ?source (wdt:P42+) ?target.
+    ?source (wdt:P4+) ?target.
     FILTER(?source = ?target)
   }
 }

@@ -19,7 +19,7 @@ owl:
 
 ## Définition
 
-Permet de définir l'appartenance d'une [Collectivité](../Classes/Collectivité/collectivité.md) à une autre.
+Permet de définir l'appartenance d'une [Collectivité](../Classes/Collectivité.md) à une autre.
 
 :::tip
 
