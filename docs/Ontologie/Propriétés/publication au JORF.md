@@ -1,11 +1,10 @@
 ---
 description: ""
 tags:
-  - contrats
   - textes réglementaires
   - bornes chronologiques
 owl:
-  "rdfs:label": "fin application"
+  "rdfs:label": "publication au JORF"
   "rdf:type": "owl:DatatypeProperty"
   "rdfs:domain": "Preuve"
   "rdfs:range": "xsd:date"
@@ -19,4 +18,4 @@ owl:
 
 ## Définition
 
-Date de fin d'application d'un texte réglementaire ou d'un contrat.
+Date de publication d'un texte réglementaire au Journal Officiel de la République Française.
