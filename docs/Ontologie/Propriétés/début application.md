@@ -2,6 +2,7 @@
 description: ""
 tags:
   - contrats
+  - textes réglementaires
   - bornes chronologiques
 owl:
   "rdfs:label": "début application"
