@@ -22,9 +22,6 @@ owl:
 
 ## Définition
 
-
-## Définition
-
 Permet de définir l'appartenance d'une [Collectivité](../Classes/Collectivité.md) à une autre.
 
 :::tip
