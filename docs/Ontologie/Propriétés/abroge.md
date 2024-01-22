@@ -10,3 +10,7 @@ owl:                                 # Le contenu des métadonnées OWL est util
 ---
 
 <OntologyTable frontMatter={frontMatter}/>
+
+## Définition
+
+Un texte réglementaire abroge un autre texte réglementaire.
