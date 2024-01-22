@@ -20,5 +20,4 @@ owl:
 
 Permet de désigner une organisations qui succède à une autre.
 
-La propriété peut être qualifiée avec une propriété [`type`](type.md) [scission/fusion]
-La propriété peut être qualifiée avec une propriété [`début`](type.md) et [`fin`](type.md)
+La propriété peut être qualifiée avec une propriété [`type`](type.md) [scission/fusion] ; [`début`](type.md) et [`fin`](type.md)
