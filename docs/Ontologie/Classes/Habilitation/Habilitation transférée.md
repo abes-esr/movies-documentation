@@ -13,4 +13,12 @@ owl:
 
 ## Définition
 
-Représente une habilitation ayant été transférée d'un établissement à un autre, par exemple lors de la disparition d'un établissement. Tout transfert est définitif.
+Représente une habilitation ayant été transférée d'un établissement à un autre, par exemple lors de la disparition d'un établissement. Lorsqu'un établissement disparait complètement : l'habilitation doctorale qu'il possédait est transférée définitivement à l'établissement qui est son héritier. Attention il n'y a pas de date de fin lors d'un transfert : tout transfert est définitif.
+
+
+## Propriétés applicables
+
+[`début`](début.md)
+[`preuve`](preuve.md)
+[`a pour bénéficiaire`](a_pour_bénéficiaire.md)
+[`est bénéficiaire de`](est_bénéficiaire_de.md)
