@@ -13,4 +13,12 @@ owl:
 
 ## Définition
 
-Représente une habilitation déléguée par un établissement à un autre, par exemple en cas de regroupement dans une COMUE ou un EPE.
+Représente une habilitation déléguée, tout ou partie, par un établissement à un autre, par exemple en cas de regroupement dans une COMUE ou un EPE. 
+
+## Propriétés applicables
+
+[`début`](début.md)
+[`fin`](fin.md)
+[`preuve`](preuve.md)
+[`a pour délégataire`](a_pour_délégataire.md)
+[`est délégataire de`](est_délégataire_de.md)
