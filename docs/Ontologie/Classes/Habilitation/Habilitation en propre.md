@@ -20,3 +20,7 @@ Représente une habilitation déténue par un établissement. Il s'agit du cas d
 [`début`](début.md)
 [`fin`](fin.md)
 [`preuve`](preuve.md)
+
+## Exemples
+
+Aix-Marseille Université (https://movies.abes.fr/wiki/Item:Q59) ; Université Clermont Auvergne (https://movies.abes.fr/wiki/Item:Q256)
