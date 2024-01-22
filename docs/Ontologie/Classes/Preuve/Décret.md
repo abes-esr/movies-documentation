@@ -45,6 +45,20 @@ owl:
 >
 > ([https://www.vie-publique.fr/fiches/20263-quest-ce-quun-decret](<https://www.vie-publique.fr/fiches/20263-quest-ce-quun-decret>))
 
+## Propriétés applicables
+
+[`nom`](nom.md)
+[`nor`](nor.md)
+[`uri`](uri.md)
+[`instance de`](instance_de.md)
+[`publication au JORF`](publication_au_JORF.md)
+[`début application`](début_application.md)
+[`fin application`](fin_application.md)
+[`abroge`](abroge.md)
+[`est abrogé par`](est_abrogé_par.md)
+[`modifie`](modifie.md)
+[`est modifié par`](est_modifié_par.md)
+
 ## Exemples 
 
 Décret n° 2014-1674 du 29 décembre 2014 portant création de la communauté d'universités et établissements "Université Paris-Saclay" et approbation de ses statuts : Q670 (https://movies.abes.fr/wiki/Item:Q670)
