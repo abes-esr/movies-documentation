@@ -52,6 +52,7 @@ graph LR
     CONTRAT -.-> |fin application| xsd:date
     CONTRAT --- SIG ---> ORG
     SIG -.-> |en tant que mandataire de| ORG
+    CONTRAT -.-> |identifiant contrat| S[xsd:string]
 ```
 
 ## Propriétés
