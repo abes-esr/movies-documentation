@@ -13,4 +13,4 @@ owl:
 
 ## Définition
 
-Cette classe permet de typer la propriété [`est membre de`](/Ontologie/Propri%C3%A9t%C3%A9s/est%20membre%20de). Cette classe ne s'utilise que pour les membres constitutifs des EPE.
+Cette classe permet de typer la propriété [`est membre de`](/Ontologie/Propri%C3%A9t%C3%A9s/est%20membre%20de). Cette classe ne s'utilise que pour les membres constitutifs, fondateurs, des regroupements (EPE, COMUE et PRES).
