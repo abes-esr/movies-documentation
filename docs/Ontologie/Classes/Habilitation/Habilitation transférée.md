@@ -22,3 +22,7 @@ Représente une habilitation ayant été transférée d'un établissement à un 
 [`preuve`](preuve.md)
 [`a pour bénéficiaire`](a_pour_bénéficiaire.md)
 [`est bénéficiaire de`](est_bénéficiaire_de.md)
+
+## Exemples
+
+Université Paris-Saclay (COMUE) (https://movies.abes.fr/wiki/Item:Q238) ; Université Paris-Sud (https://movies.abes.fr/wiki/Item:Q223)
