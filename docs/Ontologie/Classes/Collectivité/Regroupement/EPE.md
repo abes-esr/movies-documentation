@@ -12,3 +12,9 @@ owl:                                 # Le contenu des métadonnées OWL est util
 > Un établissement-composante ne peut participer qu'à un seul établissement public expérimental.
 >
 > ([https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037800979/](<https://www.legifrance.gouv.fr/loda/id/JORFTEXT000037800979/>))
+
+## Exemples
+
+Université Paris Cité : Q261 (https://movies.abes.fr/wiki/Item:Q260)
+
+Université Paris-Saclay (EPE) : Q261 (https://movies.abes.fr/wiki/Item:Q261)
