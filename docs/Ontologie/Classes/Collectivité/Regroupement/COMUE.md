@@ -15,6 +15,6 @@ owl:                                 # Le contenu des métadonnées OWL est util
 
 ## Exemples
 
-Université Sorbonne Paris Cité : Q265 (<https://movies.abes.fr/wiki/Item:Q265>)
+Université Sorbonne Paris Cité : Q265 (https://movies.abes.fr/wiki/Item:Q265)
 
-Université Paris-SAclay (COMUE) : Q238 (<https://movies.abes.fr/wiki/Item:Q238>)
+Université Paris-SAclay (COMUE) : Q238 (https://movies.abes.fr/wiki/Item:Q238)
