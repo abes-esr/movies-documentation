@@ -53,6 +53,8 @@ graph LR
     CONTRAT --- SIG ---> ORG
     SIG -.-> |en tant que mandataire de| ORG
     CONTRAT -.-> |identifiant contrat| S[xsd:string]
+    CONTRAT --- BEN ---> ORG
+    
 ```
 
 ## Propriétés
