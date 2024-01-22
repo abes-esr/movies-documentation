@@ -48,9 +48,9 @@ graph LR
     BEN{{a pour bénéficiaire}}
     ORG(Organisation)
   
-    CONTRAT --> |début application application| xsd:date
-    CONTRAT --> |fin application| xsd:date
-    CONTRAT --> |identifiant contrat| xsd:string
+    CONTRAT -.-> |début application application| xsd:date
+    CONTRAT -.-> |fin application| xsd:date
+    CONTRAT -.-> |identifiant contrat| S[xsd:string]
     CONTRAT --- BEN ---> ORG
     BEN -.- début application -.- xsd:date
     BEN -.- fin -.- xsd:date
