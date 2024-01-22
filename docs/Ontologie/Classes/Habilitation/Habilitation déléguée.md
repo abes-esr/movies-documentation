@@ -22,3 +22,7 @@ Représente une habilitation déléguée, tout ou partie, par un établissement 
 [`preuve`](preuve.md)
 [`a pour délégataire`](a_pour_délégataire.md)
 [`est délégataire de`](est_délégataire_de.md)
+
+## Exemples
+
+Université Paris-Saclay (COMUE) (https://movies.abes.fr/wiki/Item:Q238) ; Université Paris-Sud (https://movies.abes.fr/wiki/Item:Q223)
