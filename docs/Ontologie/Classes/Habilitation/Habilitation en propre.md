@@ -13,4 +13,10 @@ owl:
 
 ## Définition
 
-Représente une habilitation déténue par un établissement. Il s'agit du cas de figure par défaut pour une habilitation doctorale.
+Représente une habilitation déténue par un établissement. Il s'agit du cas de figure par défaut pour une habilitation doctorale : un établissement est habilité à délivrer le doctorat en son nom propre.
+
+## Propriétés applicables
+
+[`début`](début.md)
+[`fin`](fin.md)
+[`preuve`](preuve.md)
