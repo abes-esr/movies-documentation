@@ -55,6 +55,7 @@ graph LR
     CONTRAT -.-> |identifiant contrat| S[xsd:string]
     CONTRAT --- BEN ---> ORG
     BEN -.-> |en tant que mandant de| ORG
+    BEN -.- |début application| -.- xsd:date
     
 ```
 
