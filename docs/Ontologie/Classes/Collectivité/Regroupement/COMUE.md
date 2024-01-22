@@ -17,4 +17,4 @@ owl:                                 # Le contenu des métadonnées OWL est util
 
 Université Sorbonne Paris Cité : Q265 (https://movies.abes.fr/wiki/Item:Q265)
 
-Université Paris-SAclay (COMUE) : Q238 (https://movies.abes.fr/wiki/Item:Q238)
+Université Paris-Saclay (COMUE) : Q238 (https://movies.abes.fr/wiki/Item:Q238)
