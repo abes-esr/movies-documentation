@@ -24,11 +24,3 @@ owl:
 >
 > ([https://www.vie-publique.fr/fiches/276037-quest-ce-quun-contrat](<https://www.vie-publique.fr/fiches/276037-quest-ce-quun-contrat>))
 
-## Propriétés applicables
-
-[`nom`](nom.md)
-[`instance de`](instance_de.md)
-[`début application`](début_application.md)
-[`fin application`](fin_application.md)
-[`modifie`](modifie.md)
-[`est modifié par`](est_modifié_par.md)
