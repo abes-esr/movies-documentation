@@ -54,6 +54,7 @@ graph LR
     SIG -.-> |en tant que mandataire de| ORG
     CONTRAT -.-> |identifiant contrat| S[xsd:string]
     CONTRAT --- BEN ---> ORG
+    BEN -.-> |en tant que mandant de| ORG
     
 ```
 
