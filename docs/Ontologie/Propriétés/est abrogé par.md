@@ -13,4 +13,4 @@ owl:                                 # Le contenu des métadonnées OWL est util
 
 ## Définition
 
-Un texte réglementaire est abrogé par un autre texte réglementaire
+Un texte réglementaire est abrogé par un autre texte réglementaire.
