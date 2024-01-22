@@ -10,4 +10,4 @@ owl:
 
 ## Définition
 
-La classe Collectivité regroupe l'ensemble des structures et organismes : organisations, universités, écoles, instituts, grands établissements, fondations, COMUE, PRES, EPE, consortiums, etc.
+La classe Collectivité regroupe l'ensemble des structures et organismes : organisations, regroupements,universités, écoles, instituts, grands établissements, fondations, COMUE, PRES, EPE, consortiums, etc.
