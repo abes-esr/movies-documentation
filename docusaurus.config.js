@@ -59,7 +59,7 @@ const config = {
           // The final URL is computed by editUrl + relativeDocPath
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/abes-esr/movies-documentation/tree/develop/',
+            'https://github.com/abes-esr/movies-documentation/tree/main/',
         },
         blog: false,
         theme: {
