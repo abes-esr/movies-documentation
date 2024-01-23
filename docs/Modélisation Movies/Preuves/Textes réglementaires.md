@@ -22,8 +22,96 @@ tags:
 | [est modifié par](/Ontologie/Propriétés/est%20modifié%20par) | [Preuve](/Ontologie/Classes/Preuve)    | xsd:string      | F/R                          |                                                                                                                                                                                             |
 
 ---
-## Exemples
+## Exemples : Décret n° 2014-1674 du 29 décembre 2014 portant création de la communauté d'universités et établissements "Université Paris-Saclay" et approbation de ses statuts
 
-Décret n° 2014-1674 du 29 décembre 2014 portant création de la communauté d'universités et établissements "Université Paris-Saclay" et approbation de ses statuts : https://movies.abes.fr/wiki/Item:Q670
+<Claim property="instance de">
+    <Statement value="Décret">
+        <References>
+            <Reference>
+                <ReferenceElement property="source">STHE</ReferenceElement>
+            </Reference>
+        </References>
+    </Statement>
+</Claim>
 
-Décret n° 2015-857 du 13 juillet 2015 portant approbation des statuts de la communauté d'universités et établissements « Université confédérale Léonard de Vinci » : https://movies.abes.fr/wiki/Item:Q689
+<Claim property="nor">
+    <Statement value="MENS1425099D">
+        <References>
+            <Reference>
+                <ReferenceElement property="source">STHE</ReferenceElement>
+            </Reference>
+        </References>
+    </Statement>
+</Claim>
+
+<Claim property="uri">
+    <Statement value="(https://www.legifrance.gouv.fr/loda/id/JORFTEXT000030001707)">
+        <References>
+            <Reference>
+                <ReferenceElement property="source">STHE</ReferenceElement>
+            </Reference>
+        </References>
+    </Statement>
+</Claim>
+
+<Claim property="publication au JORF">
+    <Statement value="2014-12-31">
+        <References>
+            <Reference>
+                <ReferenceElement property="source">STHE</ReferenceElement>
+            </Reference>
+        </References>
+    </Statement>
+</Claim>
+
+<Claim property="début application">
+    <Statement value="2015-01-01">
+        <References>
+            <Reference>
+                <ReferenceElement property="source">STHE</ReferenceElement>
+            </Reference>
+        </References>
+    </Statement>
+</Claim>
+
+<Claim property="fin application">
+    <Statement value="2019-12-31">
+        <References>
+            <Reference>
+                <ReferenceElement property="source">STHE</ReferenceElement>
+            </Reference>
+        </References>
+    </Statement>
+</Claim>
+
+<Claim property="abroge">
+    <Statement value="Décret n° 2007-379 du 21 mars 2007 portant création de l'établissement public de coopération scientifique UniverSud Paris">
+        <References>
+            <Reference>
+                <ReferenceElement property="source">STHE</ReferenceElement>
+            </Reference>
+        </References>
+    </Statement>
+</Claim>
+
+<Claim property="est abrogé par">
+    <Statement value="Décret n° 2019-1131 du 5 novembre 2019 portant création de l'université Paris-Saclay et approbation de ses statuts">
+        <References>
+            <Reference>
+                <ReferenceElement property="source">STHE</ReferenceElement>
+            </Reference>
+        </References>
+    </Statement>
+</Claim>
+
+<Claim property="est modifié par">
+    <Statement value="Décret n° 2019-561 du 6 juin 2019 modifiant le décret n° 2014-1674 du 29 décembre 2014 modifié portant approbation des statuts de la communauté d'universités et établissements « Université Paris-Saclay »">
+        <References>
+            <Reference>
+                <ReferenceElement property="source">STHE</ReferenceElement>
+            </Reference>
+        </References>
+    </Statement>
+</Claim>
+
+
