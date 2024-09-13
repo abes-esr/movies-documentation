@@ -75,17 +75,15 @@ PREFIX bd: <http://www.bigdata.com/rdf#>
 PREFIX p: <https://movies.abes.fr/prop/>
 PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
 PREFIX pqv: <https://movies.abes.fr/prop/qualifier/value/>
+PREFIX ps: <https://movies.abes.fr/prop/statement/value/>
+PREFIX psv: <https://movies.abes.fr/prop/statement/>
 
-SELECT ?etabLabel ?debut ?fin WHERE {
-  ?etab wdt:P9 ?codeEtab;
-     p:P22 ?habiliatation;
-     wdt:P22 wd:Q19.
-  
-  OPTIONAL {?habiliatation pqv:P12/wikibase:timeValue ?debut.}
-  FILTER NOT EXISTS { ?habiliatation pqv:P20/wikibase:timeValue ?fin }.
-  
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
-}
+SELECT DISTINCT ?etab ?etabLabel ?statement ?datedeb WHERE {
+  ?etab p:P22 ?statement .
+  ?statement psv:P22 wd:Q19 .
+  ?statement pqv:P12/wikibase:timeValue ?datedeb. #timeValue permet d'avoir un bon format de dates
+ FILTER NOT EXISTS { ?statement pq:P20 ?fin }.
+   SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],fr". }
 ```
 :::note
 
