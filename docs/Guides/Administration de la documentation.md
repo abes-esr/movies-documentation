@@ -6,12 +6,9 @@ La documentation est enregistrée dans le répertoire [`/doc`](https://github.co
 
 ## Gestion des branches GitHub
 
-L'ensemble des modifications réalisées sur la branche [develop](https://github.com/abes-esr/movies-documentation/tree/develop) sont automatiquement poussées sur l'interface de test : https://movies-test.abes.fr/doc
-L'ensemble des modifications réalisées sur la branche [main](https://github.com/abes-esr/movies-documentation/tree/main) sont automatiquement poussées sur l'interface de production : https://movies.abes.fr/doc
+L'ensemble des modifications réalisées sur la branche [main](https://github.com/abes-esr/movies-documentation/tree/main) sont automatiquement poussées sur l'interface de test : https://movies-test.abes.fr/doc et sur l'interface de production : https://movies.abes.fr/doc .
 
 La mise à jour du site web de la documentation peut prendre plusieurs minutes.
-
-Dans la mesure du possible les modifications ne doivent pas être réalisées directement sur la branche main mais sur la branche develop. Pour publier une nouvelle version il faut fusionner la branche develop dans main.
 
 ## Documenter une nouvelle classe ou propriété
 
