@@ -162,7 +162,7 @@ PREFIX p: <https://movies.abes.fr/prop/>
 PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
 
 SELECT DISTINCT ?codeEtab ?etabLabel ?codeEtabCible ?etabCibleLabel  WHERE {
-  ?etab wdt:P9 'SORU'.
+  ?etab wdt:P9 ?_codeEtab.
 
   ?etab wdt:P9 ?codeEtab. 
   OPTIONAL {
