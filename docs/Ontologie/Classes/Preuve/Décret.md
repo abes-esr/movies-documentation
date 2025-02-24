@@ -45,3 +45,8 @@ owl:
 >
 > ([https://www.vie-publique.fr/fiches/20263-quest-ce-quun-decret](<https://www.vie-publique.fr/fiches/20263-quest-ce-quun-decret>))
 
+## Exemples 
+
+Décret n° 2014-1674 du 29 décembre 2014 portant création de la communauté d'universités et établissements "Université Paris-Saclay" et approbation de ses statuts : Q670 (https://movies.abes.fr/wiki/Item:Q670)
+
+Décret n° 2019-1123 du 31 octobre 2019 portant création de l'Université Grenoble Alpes et approbation de ses statuts : Q708 (https://movies.abes.fr/wiki/Item:Q708)

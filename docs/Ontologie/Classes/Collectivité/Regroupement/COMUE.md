@@ -13,4 +13,8 @@ owl:                                 # Le contenu des métadonnées OWL est util
 >
 > ([https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027739695/2013-07-24](<https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000027739695/2013-07-24>))
 
+## Exemples
 
+Université Sorbonne Paris Cité : Q265 (https://movies.abes.fr/wiki/Item:Q265)
+
+Université Paris-Saclay (COMUE) : Q238 (https://movies.abes.fr/wiki/Item:Q238)

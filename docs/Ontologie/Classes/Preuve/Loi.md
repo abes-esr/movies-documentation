@@ -27,3 +27,6 @@ owl:
 >
 > ([https://www.vie-publique.fr/fiches/19508-quest-ce-que-la-loi](<https://www.vie-publique.fr/fiches/19508-quest-ce-que-la-loi>))
 
+## Exemples
+
+Loi n° 84-52 du 26 janvier 1984 sur l'enseignement supérieur (Loi Savary) : (Q590 https://movies.abes.fr/wiki/Item:Q590)

@@ -37,3 +37,6 @@ owl:
 >
 > ([https://www.vie-publique.fr/fiches/20264-quest-ce-quun-arrete](<https://www.vie-publique.fr/fiches/20264-quest-ce-quun-arrete>))
 
+## Exemples 
+
+ Accréditation de Nantes Université en vue de la délivrance de diplômes nationaux (arrêté du 12-07-2022) : Q475 (https://movies.abes.fr/wiki/Item:Q475)
