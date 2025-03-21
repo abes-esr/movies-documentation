@@ -161,21 +161,54 @@ PREFIX bd: <http://www.bigdata.com/rdf#>
 PREFIX p: <https://movies.abes.fr/prop/>
 PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
 
-SELECT DISTINCT ?codeEtab ?etabLabel ?codeEtabCible ?etabCibleLabel  WHERE {
+SELECT DISTINCT ?codeEtab ?codeEtabCible WHERE {
   ?etab wdt:P9 ?_codeEtab.
-
+  
+  # On renvoie le code etab si il est présent dans la base. (En cas de mauvais code etab ça peut servir).
   ?etab wdt:P9 ?codeEtab. 
+    
   OPTIONAL {
     ?etab p:P22 ?hab. # Récupération de l'habilitation
       
     ?hab <https://movies.abes.fr/prop/statement/P22> wd:Q20; # en cas de transfert
          pq:P1 ?beneficiaire.
+
+    FILTER(NOT EXISTS { ?beneficiaire wdt:P54 ?date_suppression. })
     
     ?beneficiaire wdt:P9 ?codeEtabCible.
-  
     ?etabCible wdt:P9 ?codeEtabCible.
   }
-  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+  
+  OPTIONAL {
+    ?etab p:P22 ?hab. # Récupération de l'habilitation
+      
+    ?hab <https://movies.abes.fr/prop/statement/P22> wd:Q18; # en cas de délégation
+         pq:P2 ?beneficiaire.    
+            
+    FILTER(NOT EXISTS { ?beneficiaire wdt:P54 ?date_suppression. })
+    
+    ?beneficiaire wdt:P9 ?codeEtabCible.
+    ?etabCible wdt:P9 ?codeEtabCible.         
+  }
+    
+  OPTIONAL {
+    ?etab p:P22 ?hab. # Récupération de l'habilitation
+      
+    ?hab <https://movies.abes.fr/prop/statement/P22> wd:Q20; # en cas de transfert
+         pq:P1 ?beneficiaire.
+
+    ?beneficiaire wdt:P54 ?date_suppression.
+    
+    OPTIONAL {
+    ?beneficiaire p:P22 ?hab2. # Récupération de l'habilitation
+      
+    ?hab2 <https://movies.abes.fr/prop/statement/P22> wd:Q20; # en cas de transfert
+         pq:P1 ?beneficiaire2.
+    
+    ?beneficiaire2 wdt:P9 ?codeEtabCible.
+    ?etabCible wdt:P9 ?codeEtabCible.
+    }    
+  }
 }
 
 ```
