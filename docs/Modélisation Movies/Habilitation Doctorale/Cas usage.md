@@ -161,11 +161,11 @@ PREFIX bd: <http://www.bigdata.com/rdf#>
 PREFIX p: <https://movies.abes.fr/prop/>
 PREFIX pq: <https://movies.abes.fr/prop/qualifier/>
 
-SELECT DISTINCT ?codeEtab ?codeEtabCible WHERE {
-  ?etab wdt:P9 ?_codeEtab.
+SELECT DISTINCT ?ppnEtab ?ppnEtabCible WHERE {
+  ?etab wdt:P31 ?_ppnEtab.
   
-  # On renvoie le code etab si il est présent dans la base. (En cas de mauvais code etab ça peut servir).
-  ?etab wdt:P9 ?codeEtab. 
+  # On renvoie le PPN de l'etablissement si il est présent dans la base. (En cas de mauvais PPN ça peut servir).
+  ?etab wdt:P31 ?ppnEtab. 
     
   OPTIONAL {
     ?etab p:P22 ?hab. # Récupération de l'habilitation
@@ -175,8 +175,7 @@ SELECT DISTINCT ?codeEtab ?codeEtabCible WHERE {
 
     FILTER(NOT EXISTS { ?beneficiaire wdt:P54 ?date_suppression. })
     
-    ?beneficiaire wdt:P9 ?codeEtabCible.
-    ?etabCible wdt:P9 ?codeEtabCible.
+    ?beneficiaire wdt:P31 ?ppnEtabCible.
   }
   
   OPTIONAL {
@@ -187,8 +186,7 @@ SELECT DISTINCT ?codeEtab ?codeEtabCible WHERE {
             
     FILTER(NOT EXISTS { ?beneficiaire wdt:P54 ?date_suppression. })
     
-    ?beneficiaire wdt:P9 ?codeEtabCible.
-    ?etabCible wdt:P9 ?codeEtabCible.         
+    ?beneficiaire wdt:P31 ?ppnEtabCible.      
   }
     
   OPTIONAL {
@@ -205,8 +203,7 @@ SELECT DISTINCT ?codeEtab ?codeEtabCible WHERE {
     ?hab2 <https://movies.abes.fr/prop/statement/P22> wd:Q20; # en cas de transfert
          pq:P1 ?beneficiaire2.
     
-    ?beneficiaire2 wdt:P9 ?codeEtabCible.
-    ?etabCible wdt:P9 ?codeEtabCible.
+    ?beneficiaire2 wdt:P31 ?ppnEtabCible.
     }    
   }
 }
@@ -215,7 +212,7 @@ SELECT DISTINCT ?codeEtab ?codeEtabCible WHERE {
 
 :::note
 
-https://movies.abes.fr/api/v1/TH_assistance_deportee.csv?codeEtab=GREN
+https://movies.abes.fr/api/v1/TH_assistance_deportee.csv?ppnEtab=026403633
 
 :::
 
