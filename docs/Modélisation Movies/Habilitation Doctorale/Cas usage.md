@@ -166,7 +166,9 @@ SELECT DISTINCT ?ppnEtab ?ppnEtabCible WHERE {
   
   # On renvoie le PPN de l'etablissement si il est présent dans la base. (En cas de mauvais PPN ça peut servir).
   ?etab wdt:P31 ?ppnEtab. 
-    
+
+  # On passe par le code étab P9, pour le cas de GRE1=> GRAL
+
   OPTIONAL {
     ?etab p:P22 ?hab. # Récupération de l'habilitation
       
@@ -175,6 +177,7 @@ SELECT DISTINCT ?ppnEtab ?ppnEtabCible WHERE {
 
     FILTER(NOT EXISTS { ?beneficiaire wdt:P54 ?date_suppression. })
     
+    ?beneficiaire wdt:P9 ?codeEtabCible.
     ?beneficiaire wdt:P31 ?ppnEtabCible.
   }
   
@@ -186,7 +189,8 @@ SELECT DISTINCT ?ppnEtab ?ppnEtabCible WHERE {
             
     FILTER(NOT EXISTS { ?beneficiaire wdt:P54 ?date_suppression. })
     
-    ?beneficiaire wdt:P31 ?ppnEtabCible.      
+    ?beneficiaire wdt:P9 ?codeEtabCible.   
+    ?beneficiaire wdt:P31 ?ppnEtabCible.
   }
     
   OPTIONAL {
@@ -205,11 +209,12 @@ SELECT DISTINCT ?ppnEtab ?ppnEtabCible WHERE {
     ?hab2 <https://movies.abes.fr/prop/statement/P22> wd:Q20; # en cas de transfert
          pq:P1 ?beneficiaire2.
     
+    ?beneficiaire2 wdt:P9 ?codeEtabCible.
     ?beneficiaire2 wdt:P31 ?ppnEtabCible.
     }    
   }
+  
 }
-
 ```
 
 :::note
