@@ -151,7 +151,7 @@ https://movies.abes.fr/api/v1/ascendances_descendances_etab_these.csv?codeEtab=U
 
 ## Assistance déportée : retrouver les établissements à contacter pour les thèses de la COMUE USPC
 
-Pour utiliser la requête ci-dessous il faut saisir une valeur à la place du paramètre ?_codeEtab ou utiliser l'API GRLC
+Pour utiliser la requête ci-dessous il faut saisir une valeur à la place du paramètre ?_ppnEtab ou utiliser l'API GRLC
 
 ```sparql
 PREFIX wdt: <https://movies.abes.fr/prop/direct/>
@@ -195,7 +195,9 @@ SELECT DISTINCT ?ppnEtab ?ppnEtabCible WHERE {
     ?hab <https://movies.abes.fr/prop/statement/P22> wd:Q20; # en cas de transfert
          pq:P1 ?beneficiaire.
 
-    ?beneficiaire wdt:P54 ?date_suppression.
+    OPTIONAL {
+      ?beneficiaire wdt:P54 ?date_suppression.
+    }
     
     OPTIONAL {
     ?beneficiaire p:P22 ?hab2. # Récupération de l'habilitation
