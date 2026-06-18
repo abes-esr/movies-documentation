@@ -107,15 +107,15 @@ const config = {
             ],
           },
           {
-            title: 'Notre organisation',
+            title: 'Notre organisation Abes',
             items: [
               {
                 label: 'Site internet',
                 href: 'https://abes.fr',
               },
               {
-                label: "GitHub de l'ABES",
-                href: 'https://github.com/facebook/docusaurus',
+                label: "GitHub",
+                href: 'https://github.com/abes-esr/',
               },
             ],
           },
